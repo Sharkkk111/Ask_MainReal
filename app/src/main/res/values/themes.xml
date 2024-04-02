@@ -5,6 +5,10 @@
        <!-- <style name="Theme.ButtonChanger" parent="Theme.AppCompat.Light.NoActionBar"/> -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
    </style>
+    <style name="Button.Green" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@android:color/holo_green_light</item>
+    </style>
 
        <style name="Theme.Ask_MainReal" parent="Base.Theme.Ask_MainReal" />
+
    </resources>

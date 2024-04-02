@@ -12,6 +12,8 @@
         android:id="@+id/button"
         android:layout_width="299dp"
         android:layout_height="78dp"
+        android:theme="@style/Button.Green"
+        app:backgroundTint="@color/green"
         android:text="@string/credit_vs_debit_vs_cash_module"
         android:background="@drawable/green_btn"
         app:layout_constraintBottom_toBottomOf="parent"
