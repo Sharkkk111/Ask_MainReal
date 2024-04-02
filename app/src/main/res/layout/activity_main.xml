@@ -12,7 +12,7 @@
         android:id="@+id/button"
         android:layout_width="299dp"
         android:layout_height="78dp"
-        android:text="Credit vs Debit vs Cash Module"
+        android:text="@string/credit_vs_debit_vs_cash_module"
         android:background="@drawable/green_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
