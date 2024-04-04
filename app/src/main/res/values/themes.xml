@@ -1,14 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-     <style name="Base.Theme.Ask_MainReal" parent="Theme.Material3.DayNight.NoActionBar"> <!--THIS IS NEEDED FOR WHITE BACKGROUND-->
+    <style name="Base.Theme.Ask_MainReal" parent="Theme.Material3.DayNight.NoActionBar"> <!--THIS IS NEEDED FOR WHITE BACKGROUND-->
         <!-- Customize your light theme here. -->
-       <!-- <style name="Theme.ButtonChanger" parent="Theme.AppCompat.Light.NoActionBar"/> -->
+        <!-- <style name="Theme.ButtonChanger" parent="Theme.AppCompat.Light.NoActionBar"/> -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-   </style>
+    </style>
+
     <style name="Button.Green" parent="ThemeOverlay.AppCompat">
         <item name="colorAccent">@android:color/holo_green_light</item>
     </style>
 
-       <style name="Theme.Ask_MainReal" parent="Base.Theme.Ask_MainReal" />
+    <style name="Theme.Ask_MainReal" parent="Base.Theme.Ask_MainReal" />
 
-   </resources>
+</resources>

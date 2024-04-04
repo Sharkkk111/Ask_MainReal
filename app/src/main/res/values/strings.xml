@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Ask_MainReal</string>
     <string name="credit_vs_debit_vs_cash_module">Credit vs Debit vs Cash Module</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="progress">Progress</string>
 </resources>
