@@ -9,7 +9,7 @@
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_front_page"
         android:layout_width="299dp"
         android:layout_height="78dp"
         android:theme="@style/Button.Green"
