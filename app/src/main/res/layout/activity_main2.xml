@@ -5,6 +5,114 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivityThree">
+    tools:context=".MainActivity2"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-43dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity2"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-43dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="299dp"
+            android:layout_height="78dp"
+            android:background="@drawable/green_btn"
+            android:text="@string/credit_vs_debit_vs_cash_module"
+            android:theme="@style/Button.Green"
+            app:backgroundTint="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.024" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="258dp"
+            android:layout_height="66dp"
+            android:background="@drawable/green_btn"
+            android:text="Debit Cards"
+            android:theme="@style/Button.Green"
+            app:backgroundTint="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.548" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="177dp"
+            android:layout_height="46dp"
+            android:text="choose this lesson"
+            tools:layout_editor_absoluteX="117dp"
+            tools:layout_editor_absoluteY="580dp" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="button2" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="203dp"
+            android:layout_height="151dp"
+            app:srcCompat="@drawable/debitcard"
+            tools:layout_editor_absoluteX="104dp"
+            tools:layout_editor_absoluteY="429dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="258dp"
+        android:layout_height="66dp"
+        android:background="@drawable/green_btn"
+        android:text="Credit Cards"
+        android:theme="@style/Button.Green"
+        app:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.156" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="176dp"
+        android:layout_height="151dp"
+        app:srcCompat="@drawable/creditcard"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="170dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="177dp"
+        android:layout_height="46dp"
+        android:text="choose this lesson"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="321dp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="299dp"
+        android:layout_height="78dp"
+        android:background="@drawable/green_btn"
+        android:text="@string/credit_vs_debit_vs_cash_module"
+        android:theme="@style/Button.Green"
+        app:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
