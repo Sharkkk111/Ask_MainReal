@@ -9,7 +9,7 @@
     tools:context=".MainActivity2"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="-43dp"
-    android:layout_marginLeft="50dp">
+    android:layout_marginStart="50dp">
 
     <TableLayout
         android:layout_width="wrap_content"
@@ -148,7 +148,7 @@
                 android:id="@+id/imageViewCash"
                 android:layout_width="203dp"
                 android:layout_height="151dp"
-                android:contentDescription="TODO"
+                android:contentDescription="@string/credit_vs_debit_vs_cash_module"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
