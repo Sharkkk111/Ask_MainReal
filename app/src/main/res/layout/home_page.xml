@@ -123,9 +123,9 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="258dp"
-                android:layout_height="100dp"
-                app:srcCompat="@drawable/cash"
+                android:layout_width="176dp"
+                android:layout_height="151dp"
+                app:srcCompat="@drawable/creditcard"
                 tools:layout_editor_absoluteX="107dp"
                 tools:layout_editor_absoluteY="323dp" />
         </TableRow>
