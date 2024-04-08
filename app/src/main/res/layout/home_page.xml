@@ -97,7 +97,6 @@
     </TableRow>
 
     <TableRow>
-
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="176dp"
@@ -124,8 +123,8 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="235dp"
-                android:layout_height="91dp"
+                android:layout_width="258dp"
+                android:layout_height="100dp"
                 app:srcCompat="@drawable/cash"
                 tools:layout_editor_absoluteX="107dp"
                 tools:layout_editor_absoluteY="323dp" />
