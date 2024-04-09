@@ -17,7 +17,7 @@
         android:layout_height="94dp"
         android:background="@drawable/box"
         android:gravity="center"
-        android:text="Topic 1.1.1: What is a Credit Card?"
+        android:text="Topic 1.1.2: What is Cash back on a Credit Card?"
         android:textSize="25dp"
         tools:layout_editor_absoluteX="33dp"
         tools:layout_editor_absoluteY="34dp" />
