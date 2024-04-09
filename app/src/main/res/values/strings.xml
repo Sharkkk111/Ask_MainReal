@@ -7,7 +7,5 @@
     <string name="lessons_in_progress">Lessons in Progress</string>
     <string name="home">Home</string>
     <string name="cash">Cash</string>
-    <string name="title_activity_fullscreen">FullscreenActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="lesson_complete">Lesson Complete</string>
 </resources>
