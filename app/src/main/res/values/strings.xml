@@ -10,4 +10,9 @@
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="lesson_complete">Lesson Complete!</string>
+    <string name="keep_going">Keep going!</string>
+    <string name="start_next_lesson">Start next lesson</string>
+    <string name="review_previous_lessons">Review previous lessons</string>
+    <string name="explore_other_topics">Explore other topics</string>
 </resources>
