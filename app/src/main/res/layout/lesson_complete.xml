@@ -17,33 +17,17 @@
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="80dp">
 
-        <Button
-            android:id="@+id/home"
-            android:layout_width="83dp"
-            android:layout_height="41dp"
-            android:background="@drawable/green_btn"
-            android:text="@string/home"
-            android:textSize="10sp"
-            android:theme="@style/Button.Green"
-            app:backgroundTint="@color/green"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.046"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.008" />
-
         <ImageView
-            android:id="@+id/imageView01"
-            android:layout_width="262dp"
-            android:layout_height="254dp"
+            android:id="@+id/imageCheckMark"
+            android:layout_width="283dp"
+            android:layout_height="285dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.125"
-            app:srcCompat="@drawable/lessoncomplete" />
+            app:layout_constraintVertical_bias="0.091"
+            app:srcCompat="@drawable/lessoncomplete"
+            android:contentDescription="@string/checkkmark" />
 
         <TextView
             android:layout_width="348dp"
