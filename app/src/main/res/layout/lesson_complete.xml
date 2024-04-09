@@ -18,7 +18,7 @@
         tools:layout_editor_absoluteY="80dp">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imageView01"
             android:layout_width="283dp"
             android:layout_height="285dp"
             app:layout_constraintBottom_toBottomOf="parent"
