@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
-        android:id="@+id/textView01"
+        android:id="@+id/textView102"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.589"
@@ -23,7 +23,7 @@
         tools:layout_editor_absoluteY="34dp" />
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/textView103"
         android:layout_width="309dp"
         android:layout_height="58dp"
         android:background="@drawable/box"
@@ -38,7 +38,7 @@
         app:layout_constraintVertical_bias="0.67" />
 
     <Button
-        android:id="@+id/button_front_page17"
+        android:id="@+id/button_front_page55"
         android:layout_width="269dp"
         android:layout_height="71dp"
         android:background="@drawable/box"
@@ -50,7 +50,7 @@
         app:layout_constraintVertical_bias="0.819" />
 
     <Button
-        android:id="@+id/button_front_page21"
+        android:id="@+id/button_front_page22"
         android:layout_width="269dp"
         android:layout_height="71dp"
         android:background="@drawable/box"
