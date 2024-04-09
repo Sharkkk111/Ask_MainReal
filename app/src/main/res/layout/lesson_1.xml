@@ -28,8 +28,9 @@
         android:layout_height="58dp"
         android:background="@drawable/box"
         android:gravity="center"
-        android:text="Caption and Details"
-        android:textSize="25dp"
+        android:text="Watch the full video to learn more about cash back credit card programs and how your weekly trip to the grocery store may help you get one step closer to finally taking that dream vacation.
+- Discover"
+        android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.581"
