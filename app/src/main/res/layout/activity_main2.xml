@@ -6,7 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2"
+    tools:context=".MainActivityThree"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="-43dp"
     android:layout_marginStart="50dp">
@@ -14,9 +14,25 @@
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:stretchColumns="1">
-
-
+        android:stretchColumns="1"
+        android:layout_marginTop="10dp">
+        <TableRow>
+            <Button
+                android:id="@+id/home"
+                android:layout_width="28dp"
+                android:layout_height="35dp"
+                android:background="@drawable/green_btn"
+                android:text="@string/home"
+                android:textSize="10sp"
+                android:theme="@style/Button.Green"
+                app:backgroundTint="@color/green"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.008" />
+        </TableRow>
         <TableRow>
             <Button
                 android:id="@+id/button1"
@@ -34,10 +50,53 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.024" />
         </TableRow>
+        <TableRow>
 
+            <Button
+                android:id="@+id/credit1"
+                android:layout_width="258dp"
+                android:layout_height="66dp"
+                android:background="@drawable/green_btn"
+                android:text="Credit Cards"
+                android:theme="@style/Button.Green"
+                app:backgroundTint="@color/green"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.156" />
+        </TableRow>
+        <TableRow>
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="176dp"
+                android:layout_height="151dp"
+                android:contentDescription="@string/credit_vs_debit_vs_cash_module"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.293"
+                app:srcCompat="@drawable/creditcard" />
+        </TableRow>
         <TableRow>
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/credit2"
+                android:layout_width="177dp"
+                android:layout_height="46dp"
+                android:text="choose this lesson"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.468"
+                android:layout_marginBottom="15dp"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/debit"
                 android:layout_width="258dp"
                 android:layout_height="66dp"
                 android:background="@drawable/green_btn"
@@ -69,7 +128,7 @@
         </TableRow>
         <TableRow>
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/debit2"
                 android:layout_width="177dp"
                 android:layout_height="46dp"
                 android:text="choose this lesson"
@@ -83,49 +142,7 @@
         </TableRow>
 
 
-        <TableRow>
-            <Button
-                android:id="@+id/button9"
-                android:layout_width="258dp"
-                android:layout_height="66dp"
-                android:background="@drawable/green_btn"
-                android:text="Credit Cards"
-                android:theme="@style/Button.Green"
-                app:backgroundTint="@color/green"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.496"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.156" />
-        </TableRow>
-        <TableRow>
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="176dp"
-                android:layout_height="151dp"
-                android:contentDescription="@string/credit_vs_debit_vs_cash_module"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.502"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.293"
-                app:srcCompat="@drawable/creditcard" />
-        </TableRow>
-        <TableRow>
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="177dp"
-                android:layout_height="46dp"
-                android:text="choose this lesson"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.468"
-                android:layout_marginBottom="15dp"/>
-        </TableRow>
+
         <TableRow>
             <Button
                 android:id="@+id/cash"
