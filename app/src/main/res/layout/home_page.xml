@@ -48,7 +48,7 @@
             android:layout_width="258dp"
             android:layout_height="66dp"
             android:background="@drawable/green_btn"
-            android:text="Debit Cards"
+            android:text="@string/debit_cards"
             android:theme="@style/Button.Green"
             app:backgroundTint="@color/green"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -97,8 +97,9 @@
     </TableRow>
 
     <TableRow>
+
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imageView71"
             android:layout_width="176dp"
             android:layout_height="151dp"
             app:srcCompat="@drawable/creditcard"
@@ -122,10 +123,10 @@
         <TableRow>
 
             <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="176dp"
-                android:layout_height="151dp"
-                app:srcCompat="@drawable/creditcard"
+                android:id="@+id/imageView72"
+                android:layout_width="235dp"
+                android:layout_height="91dp"
+                app:srcCompat="@drawable/cash"
                 tools:layout_editor_absoluteX="107dp"
                 tools:layout_editor_absoluteY="323dp" />
         </TableRow>
