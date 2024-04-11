@@ -16,6 +16,21 @@
         tools:context=".MainActivity2"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="80dp">
+        <Button
+            android:id="@+id/home"
+            android:layout_width="83dp"
+            android:layout_height="41dp"
+            android:background="@drawable/green_btn"
+            android:text="@string/home"
+            android:textSize="10sp"
+            android:theme="@style/Button.Green"
+            app:backgroundTint="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.046"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.008" />
 
         <ImageView
             android:id="@+id/imageCheckMark"
