@@ -5,21 +5,6 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <ScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:fillViewport="true"
-        android:layout_marginLeft="50dp">
-
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:stretchColumns="1">
-
-        <TableRow>
     <Button
         android:id="@+id/home"
         android:layout_width="83dp"
@@ -35,9 +20,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.008" />
-        </TableRow>
 
-        <TableRow>
+
     <TextView
         android:id="@+id/textView01"
         android:layout_width="356dp"
@@ -53,8 +37,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.105" />
 
+    <TextView
+        android:id="@+id/textView01"
+        android:layout_width="345dp"
+        android:layout_height="42dp"
+        android:background="@drawable/box"
+        android:gravity="center"
+        android:text="@string/what_is_cashback"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.249" />
 
 
-    </TableLayout>
-    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
