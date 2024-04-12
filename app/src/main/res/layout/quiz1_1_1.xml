@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="83dp"
+        android:layout_height="41dp"
+        android:background="@drawable/green_btn"
+        android:text="@string/home"
+        android:textSize="10sp"
+        android:theme="@style/Button.Green"
+        app:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008" />
+
+
+    <TextView
+        android:id="@+id/textView01"
+        android:layout_width="356dp"
+        android:layout_height="94dp"
+        android:background="@drawable/box"
+        android:gravity="center"
+        android:text="Topic 1.1.1: What is a Credit Card?"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <TextView
+        android:id="@+id/textView02"
+        android:layout_width="340dp"
+        android:layout_height="77dp"
+        android:background="@drawable/box"
+        android:gravity="center"
+        android:text="@string/What_can_you_think_of_credit_cards_as"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.302" />
+
+    <TextView
+        android:id="@+id/textView04"
+        android:layout_width="316dp"
+        android:layout_height="45dp"
+        android:background="@drawable/box"
+        android:gravity="center"
+        android:text="@string/enter_answer"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.405" />
+
+    <TextView
+        android:id="@+id/textView03"
+        android:layout_width="340dp"
+        android:layout_height="77dp"
+        android:background="@drawable/box"
+        android:gravity="center"
+        android:text="@string/What_can_you_think_of_credit_cards_as"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.548" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="296dp"
+        android:layout_height="58dp"
+        android:background="@drawable/green_btn"
+        android:text="@string/a_1_1_1"
+        android:theme="@style/Button.Green"
+        app:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.652" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="296dp"
+        android:layout_height="58dp"
+        android:background="@drawable/green_btn"
+        android:text="@string/b_1_1_1"
+        android:theme="@style/Button.Green"
+        app:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.739" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="296dp"
+        android:layout_height="58dp"
+        android:background="@drawable/green_btn"
+        android:text="@string/c_1_1_1"
+        android:theme="@style/Button.Green"
+        app:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.826" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="296dp"
+        android:layout_height="58dp"
+        android:background="@drawable/green_btn"
+        android:text="@string/d_1_1_1"
+        android:theme="@style/Button.Green"
+        app:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.913" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
