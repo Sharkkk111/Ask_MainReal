@@ -10,6 +10,6 @@ public class QuizTwoCredit extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.lesson_1);}
+        setContentView(R.layout.);}
 
 }
