@@ -30,6 +30,11 @@
             android:exported="false"
             android:theme="@style/Theme.Ask_MainReal"/>
         <activity
+            android:name=".LessonComplete"
+            android:exported="false"
+            android:theme="@style/Theme.Ask_MainReal"/>
+
+        <activity
             android:name=".Test"
             android:exported="true"
             android:theme="@style/Theme.Ask_MainReal">
