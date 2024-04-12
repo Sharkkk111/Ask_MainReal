@@ -7,7 +7,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:fillViewport="true"
     android:layout_marginLeft="50dp"
-    tools:context=".HomePage">
+    tools:context=".lesson_1">
 
     <TableLayout
         android:layout_width="match_parent"
