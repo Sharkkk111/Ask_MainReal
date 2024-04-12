@@ -12,7 +12,6 @@ public class lesson_1 extends AppCompatActivity {
         setContentView(R.layout.lesson_1);}
 
         final VideoView videoView = (VideoView) findViewById(R.id.videoView);
-        videoView.setVideoPath();
-        videoView.start();
+
 
 }
