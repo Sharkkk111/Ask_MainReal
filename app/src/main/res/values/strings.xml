@@ -26,5 +26,11 @@
     <string name="go_back02">Go Back</string>
     <string name="quiz_me01">Quiz Me</string>
     <string name="debit_cards">Debit Cards</string>
-    <string name="what_is_cashback">What is cashback?</string>
+    <string name="What_can_you_think_of_credit_cards_as">What can you think of credit cards as, according to the video?</string>
+    <string name="enter_answer">Enter answer here</string>
+    <string name="If_you_pay_the_minimum">If you pay the minimum, what happens when you need to pay the rest?</string>
+    <string name="a_1_1_1">A. Interest is added to the remaining sum per week.</string>
+    <string name="b_1_1_1">B. Interest is added to the remaining sum per day.</string>
+    <string name="c_1_1_1">C. Interest is added to the remaining sum biweekly.</string>
+    <string name="d_1_1_1">D. The remaining total stays the same until you pay that off.</string>
 </resources>
