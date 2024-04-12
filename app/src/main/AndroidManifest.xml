@@ -31,6 +31,14 @@
             android:exported="false"
             android:theme="@style/Theme.Ask_MainReal"/>
         <activity
+            android:name=".QuizOneCredit"
+            android:exported="false"
+            android:theme="@style/Theme.Ask_MainReal"/>
+        <activity
+            android:name=".QuizTwoCredit"
+            android:exported="false"
+            android:theme="@style/Theme.Ask_MainReal"/>
+        <activity
             android:name=".LessonComplete"
             android:exported="false"
             android:theme="@style/Theme.Ask_MainReal"/>
