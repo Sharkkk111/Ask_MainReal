@@ -7,29 +7,23 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class LessonOneCredit extends AppCompatActivity {
+import com.example.ask_mainreal.HomePage;
+import com.example.ask_mainreal.MainActivityThree;
+import com.example.ask_mainreal.R;
+
+public class LessonComplete extends AppCompatActivity {
 
     Button home;
-    Button back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.lesson_1);
+        setContentView(R.layout.lesson_complete);
 
         home = findViewById(R.id.home);
         home.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(LessonOneCredit.this, HomePage.class );
-                startActivity(intent);
-            }
-        });
-
-        back = findViewById(R.id.back_button);
-        back.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                Intent intent = new Intent(LessonOneCredit.this,MainActivityThree.class );
+                Intent intent = new Intent(LessonComplete.this, HomePage.class );
                 startActivity(intent);
             }
         });
