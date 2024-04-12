@@ -1,3 +1,6 @@
+package com.example.ask_mainreal;
+
+import static android.content.Intent.getIntent;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -44,7 +47,7 @@ public class VideoDisplay extends YouTubeBaseActivity implements Serializable {
         Log.d("arraylist", "" + urls);
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_videos);
+        onCreate(R.layout.activity_videos);
         userBut = (Button) findViewById(R.id.back_user);
         previous = (Button) findViewById(R.id.previous_video);
         advance = (Button) findViewById(R.id.proceed);
@@ -52,7 +55,8 @@ public class VideoDisplay extends YouTubeBaseActivity implements Serializable {
         ytPlayer = findViewById(R.id.youtube);
 
 
-        YouTubePlayer.OnInitializedListener listener = new YouTubePlayer.OnInitializedListener() {
+        YouTubePlayer.OnInitializedListener listener;
+        listener = new YouTubePlayer.OnInitializedListener() {
             // Implement two methods by clicking on red
             // error bulb inside onInitializationSuccess
             // method add the video link or the playlist
