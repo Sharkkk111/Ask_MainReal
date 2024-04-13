@@ -28,7 +28,7 @@ public class Test extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(Test.this, LessonOneCredit.class );
+                Intent intent = new Intent(Test.this, HomePage.class );
                 startActivity(intent);
             }
         });
