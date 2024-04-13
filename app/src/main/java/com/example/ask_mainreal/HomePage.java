@@ -18,13 +18,18 @@ public class HomePage extends AppCompatActivity {
         setContentView(R.layout.home_page);
 
         SharedPreferences sp = getApplicationContext().getSharedPreferences("Preferences", Context.MODE_PRIVATE);
+
     credit=findViewById(R.id.credit1);
         credit.setOnClickListener(new View.OnClickListener(){
         @Override
         public void onClick(View view){
-            if()
+            if(sp.getInt("credit",0) ==0){
             Intent intent = new Intent(HomePage.this,LessonOneCredit.class);
-            startActivity(intent);
-        }
-    });
-}}
+            startActivity(intent);}
+            if(sp.getInt("credit",0)==1){
+                Intent intent = new Intent(HomePage.this,LessonTwoCredit.class);
+                startActivity(intent);}
+            }
+
+    });}
+}
