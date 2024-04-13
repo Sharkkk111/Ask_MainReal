@@ -18,5 +18,6 @@ public class lesson_1 extends AppCompatActivity {
 //allow mediaController to control our videoView
         videoView.setMediaController(mediaController);
         setContentView(R.layout.lesson_1);
+
     }
 }
