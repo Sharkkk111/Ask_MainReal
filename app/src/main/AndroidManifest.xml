@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" >
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
 
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,7 +14,7 @@
         android:theme="@style/Theme.Ask_MainReal"
         tools:targetApi="31" >
         <activity
-            android:name=".lesson_1"
+            android:name=".HomePage"
             android:exported="false"
             android:label="@string/title_activity_home_page"
             android:theme="@style/Theme.Ask_MainReal" />
@@ -29,14 +28,6 @@
             android:theme="@style/Theme.Ask_MainReal"/>
         <activity
             android:name=".LessonTwoCredit"
-            android:exported="false"
-            android:theme="@style/Theme.Ask_MainReal"/>
-        <activity
-            android:name=".QuizOneCredit"
-            android:exported="false"
-            android:theme="@style/Theme.Ask_MainReal"/>
-        <activity
-            android:name=".QuizTwoCredit"
             android:exported="false"
             android:theme="@style/Theme.Ask_MainReal"/>
         <activity

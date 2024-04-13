@@ -10,10 +10,14 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 public class QuizOneCredit extends AppCompatActivity{
+<<<<<<< HEAD
     Button a;
     Button b;
     Button c;
     Button d;
+=======
+    Button choice;
+>>>>>>> origin/keira
     Button submit;
     EditText ShortAnswer;
     SharedPreferences sp;
@@ -26,13 +30,18 @@ public class QuizOneCredit extends AppCompatActivity{
     ShortAnswer = findViewById(R.id.editText);
     submit = findViewById(R.id.enter);
 
+<<<<<<< HEAD
     sp = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
+=======
+    sp = getSharedPreferences("MyUserPreferences", Context.MODE_PRIVATE);
+>>>>>>> origin/keira
         submit.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 ShortAnswerStr = ShortAnswer.getText().toString();
 
                 SharedPreferences.Editor editor = sp.edit();
+<<<<<<< HEAD
                 if(ShortAnswerStr.equals("correct answer")){
                     editor.putBoolean("answer1", true);}
 
@@ -79,5 +88,15 @@ public class QuizOneCredit extends AppCompatActivity{
             Intent intent = new Intent(QuizOneCredit.this, LessonComplete.class );
             startActivity(intent);
         }
+=======
+
+                editor.putString("answer", ShortAnswerStr);
+                editor.apply();
+
+
+            }
+        });
+
+>>>>>>> origin/keira
     }
 }
