@@ -11,8 +11,6 @@ public class LessonOneCredit extends AppCompatActivity {
 
     Button home;
     Button back;
-
-    Button quizme;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,15 +30,6 @@ public class LessonOneCredit extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(LessonOneCredit.this,MainActivityThree.class );
-                startActivity(intent);
-            }
-        });
-
-        quizme = findViewById(R.id.quizme_button);
-        quizme.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                Intent intent = new Intent(LessonOneCredit.this, QuizOneCredit.class );
                 startActivity(intent);
             }
         });
