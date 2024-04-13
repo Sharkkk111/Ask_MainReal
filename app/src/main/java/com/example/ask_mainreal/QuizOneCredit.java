@@ -10,14 +10,11 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 public class QuizOneCredit extends AppCompatActivity{
-<<<<<<< HEAD
     Button a;
     Button b;
     Button c;
     Button d;
-=======
     Button choice;
->>>>>>> origin/keira
     Button submit;
     EditText ShortAnswer;
     SharedPreferences sp;
@@ -27,21 +24,17 @@ public class QuizOneCredit extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz1_1_1);
 
-    ShortAnswer = findViewById(R.id.editText);
-    submit = findViewById(R.id.enter);
+        ShortAnswer = findViewById(R.id.editText);
+        submit = findViewById(R.id.enter);
 
-<<<<<<< HEAD
-    sp = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
-=======
-    sp = getSharedPreferences("MyUserPreferences", Context.MODE_PRIVATE);
->>>>>>> origin/keira
+        sp = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
+        sp = getSharedPreferences("MyUserPreferences", Context.MODE_PRIVATE);
         submit.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 ShortAnswerStr = ShortAnswer.getText().toString();
 
                 SharedPreferences.Editor editor = sp.edit();
-<<<<<<< HEAD
                 if(ShortAnswerStr.equals("correct answer")){
                     editor.putBoolean("answer1", true);}
 
@@ -77,7 +70,7 @@ public class QuizOneCredit extends AppCompatActivity{
             @Override
             public void onClick(View view){
                 SharedPreferences.Editor editor = sp.edit();
-                    editor.putBoolean("answer2", true);
+                editor.putBoolean("answer2", true);
                 editor.apply();
             }
         });
@@ -88,15 +81,8 @@ public class QuizOneCredit extends AppCompatActivity{
             Intent intent = new Intent(QuizOneCredit.this, LessonComplete.class );
             startActivity(intent);
         }
-=======
-
-                editor.putString("answer", ShortAnswerStr);
-                editor.apply();
 
 
-            }
-        });
 
->>>>>>> origin/keira
     }
-}
+        }
