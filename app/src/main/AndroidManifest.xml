@@ -34,6 +34,10 @@
             android:name=".LessonComplete"
             android:exported="false"
             android:theme="@style/Theme.Ask_MainReal"/>
+        <activity
+            android:name=".lesson_1"
+            android:exported="false"
+            android:theme="@style/Theme.Ask_MainReal"/>
 
         <activity
             android:name=".Test"
