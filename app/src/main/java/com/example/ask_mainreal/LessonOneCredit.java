@@ -40,7 +40,7 @@ public class LessonOneCredit extends AppCompatActivity {
         quizme.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(LessonOneCredit.this, QuizOneCredit.class );
+                Intent intent = new Intent(LessonOneCredit.this, Test.class );
                 startActivity(intent);
             }
         });
