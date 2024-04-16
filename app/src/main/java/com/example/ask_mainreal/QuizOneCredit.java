@@ -23,23 +23,24 @@ public class QuizOneCredit extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz1_1_1);
+        SharedPreferences.Editor editor = sp.edit();
+        editor.putBoolean("answer2", false);
+        editor.apply();
 
         ShortAnswer = findViewById(R.id.editText);
         submit = findViewById(R.id.enter);
 
         sp = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
-        sp = getSharedPreferences("MyUserPreferences", Context.MODE_PRIVATE);
         submit.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 ShortAnswerStr = ShortAnswer.getText().toString();
 
                 SharedPreferences.Editor editor = sp.edit();
-                if(ShortAnswerStr.equals("correct answer")){
-                    editor.putBoolean("answer1", true);}
+                editor.putBoolean("answer1", ShortAnswerStr.equals("correct answer"));
 
                 editor.apply();
-                if((sp.getBoolean("answer1", false) && sp.getBoolean("answer2", false))){
+                if((sp.getBoolean("answer2", false))&&sp.getBoolean("answer1",false)){
                     editor.putInt("creditLesson", 1);
                     editor.apply();
                     Intent intent = new Intent(QuizOneCredit.this, LessonComplete.class );
@@ -51,6 +52,9 @@ public class QuizOneCredit extends AppCompatActivity{
         a.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
+                SharedPreferences.Editor editor = sp.edit();
+                editor.putBoolean("answer2", false);
+                editor.apply();
                 Intent intent = new Intent(QuizOneCredit.this, LessonOneCredit.class );
                 startActivity(intent);
             }
@@ -59,6 +63,9 @@ public class QuizOneCredit extends AppCompatActivity{
         c.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
+                SharedPreferences.Editor editor = sp.edit();
+                editor.putBoolean("answer2", false);
+                editor.apply();
                 Intent intent = new Intent(QuizOneCredit.this, LessonOneCredit.class );
                 startActivity(intent);
             }
@@ -67,6 +74,9 @@ public class QuizOneCredit extends AppCompatActivity{
         d.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
+                SharedPreferences.Editor editor = sp.edit();
+                editor.putBoolean("answer2", false);
+                editor.apply();
                 Intent intent = new Intent(QuizOneCredit.this, LessonOneCredit.class );
                 startActivity(intent);
             }
@@ -78,7 +88,7 @@ public class QuizOneCredit extends AppCompatActivity{
                 SharedPreferences.Editor editor = sp.edit();
                 editor.putBoolean("answer2", true);
                 editor.apply();
-                if((sp.getBoolean("answer1", false)) && (sp.getBoolean("answer2", false))){
+                if(sp.getBoolean("answer1", false)){
                     editor.putInt("creditLesson", 1);
                     editor.apply();
                     Intent intent = new Intent(QuizOneCredit.this, LessonComplete.class );
