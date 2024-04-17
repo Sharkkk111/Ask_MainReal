@@ -28,7 +28,6 @@ public class QuizOneCredit extends AppCompatActivity{
         submit = findViewById(R.id.enter);
 
         sp = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
-        sp = getSharedPreferences("MyUserPreferences", Context.MODE_PRIVATE);
         submit.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -85,4 +84,4 @@ public class QuizOneCredit extends AppCompatActivity{
 
 
     }
-        }
+}

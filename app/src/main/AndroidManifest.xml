@@ -35,10 +35,9 @@
             android:exported="false"
             android:theme="@style/Theme.Ask_MainReal"/>
         <activity
-            android:name=".lesson_1"
+            android:name=".QuizOneCredit"
             android:exported="false"
             android:theme="@style/Theme.Ask_MainReal"/>
-
         <activity
             android:name=".Test"
             android:exported="true"
