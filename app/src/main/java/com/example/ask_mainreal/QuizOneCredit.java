@@ -39,11 +39,15 @@ public class QuizOneCredit extends AppCompatActivity{
 
                 if(ShortAnswerStr.equals("correct answer")){
                     editor.putBoolean("answer1", true);
-                if (sp.getBoolean("answer1", false)) {
-                    editor.putInt("creditLesson", 1);
-                    editor.apply();
-                    Intent intent = new Intent(QuizOneCredit.this, LessonComplete.class);
-                    startActivity(intent);}
+                    if (sp.getBoolean("answer2", false)) {
+                        editor.putInt("creditLesson", 1);
+                        editor.apply();
+                        Intent intent = new Intent(QuizOneCredit.this, LessonComplete.class);
+                        startActivity(intent);}
+                }
+                else{
+                    Intent intent = new Intent(QuizOneCredit.this, LessonOneCredit.class );
+                    startActivity(intent);
                 }
                 editor.apply();
             }
