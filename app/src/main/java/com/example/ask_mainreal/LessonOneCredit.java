@@ -49,6 +49,7 @@ public class LessonOneCredit extends AppCompatActivity {
             public void onClick(View view){
                 Intent intent = new Intent(LessonOneCredit.this, QuizOneCredit.class );
                 startActivity(intent);
+
             }
         });
     }
