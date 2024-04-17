@@ -33,4 +33,7 @@
     <string name="b_1_1_1">B. Interest is added to the remaining sum per day.</string>
     <string name="c_1_1_1">C. Interest is added to the remaining sum biweekly.</string>
     <string name="d_1_1_1">D. The remaining total stays the same until you pay that off.</string>
+    <string name="what_is_cashback">What is cashback?</string>
+    <string name="topic_1_1_2_what_is_cash_back_on_a_credit_card">Topic 1.1.2: What is cash back on a credit Card?</string>
+    <string name="how_are_cashback_earnings_limited">How are cashback earnings limited?</string>
 </resources>
