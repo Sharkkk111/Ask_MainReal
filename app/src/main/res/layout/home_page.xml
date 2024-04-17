@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_marginLeft="50dp"
+    tools:context=".lesson_1">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1"
+        android:layout_marginTop="10dp">
+
+        <TableRow>
+        <TextView
+            android:layout_width="299dp"
+            android:layout_height="78dp"
+            android:gravity="center"
+            android:text="@string/progress"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.589"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.024" />
+        </TableRow>
+<TableRow>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:gravity="center"
+        android:text="@string/lessons_completed"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.209" />
+</TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/credit1"
+                android:layout_width="258dp"
+                android:layout_height="66dp"
+                android:background="@drawable/green_btn"
+                android:text="Credit Cards"
+                android:theme="@style/Button.Green"
+                app:backgroundTint="@color/green"
+                tools:layout_editor_absoluteX="51dp"
+                tools:layout_editor_absoluteY="289dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/imageView71"
+                android:layout_width="176dp"
+                android:layout_height="151dp"
+                app:srcCompat="@drawable/creditcard"
+                tools:layout_editor_absoluteX="107dp"
+                tools:layout_editor_absoluteY="323dp" />
+        </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_width="299dp"
+            android:layout_height="78dp"
+            android:gravity="center"
+            android:text="@string/lessons_in_progress"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.209" />
+    </TableRow>
+        <TableRow>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="258dp"
+                android:layout_height="66dp"
+                android:background="@drawable/green_btn"
+                android:text="@string/debit_cards"
+                android:theme="@style/Button.Green"
+                app:backgroundTint="@color/green"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.431"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.748" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="203dp"
+                android:layout_height="151dp"
+                app:srcCompat="@drawable/debitcard"
+                tools:layout_editor_absoluteX="104dp"
+                tools:layout_editor_absoluteY="564dp"
+                android:layout_marginBottom="10dp"/>
+        </TableRow>
+
+
+        <TableRow>
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="258dp"
+                android:layout_height="66dp"
+                android:background="@drawable/green_btn"
+                android:text="@string/cash"
+                android:theme="@style/Button.Green"
+                app:backgroundTint="@color/green"
+                tools:layout_editor_absoluteX="51dp"
+                tools:layout_editor_absoluteY="289dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/imageView72"
+                android:layout_width="235dp"
+                android:layout_height="91dp"
+                app:srcCompat="@drawable/cash"
+                tools:layout_editor_absoluteX="107dp"
+                tools:layout_editor_absoluteY="323dp" />
+        </TableRow>
+
+</TableLayout>
+</ScrollView>

@@ -8,6 +8,7 @@
     tools:context=".Test">
 
 
+
     <Button
         android:id="@+id/button_front_page"
         android:layout_width="299dp"
@@ -23,12 +24,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.09" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button
+        android:id="@+id/home"
+        android:layout_width="83dp"
+        android:layout_height="41dp"
+        android:background="@drawable/green_btn"
+        android:text="@string/home"
+        android:textSize="10sp"
+        android:theme="@style/Button.Green"
+        app:backgroundTint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
