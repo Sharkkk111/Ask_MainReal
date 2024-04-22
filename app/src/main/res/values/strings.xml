@@ -33,4 +33,9 @@
     <string name="b_1_1_1">B. Interest is added to the remaining sum per day.</string>
     <string name="c_1_1_1">C. Interest is added to the remaining sum biweekly.</string>
     <string name="d_1_1_1">D. The remaining total stays the same until you pay that off.</string>
+    <string name="what_is_cashback">What is cashback?</string>
+    <string name="topic_1_1_2_what_is_cash_back_on_a_credit_card">Topic 1.1.2: What is cash back on a credit Card?</string>
+    <string name="how_are_cashback_earnings_limited">How are cashback earnings limited?</string>
+    <string name="how_to_utilize_cash_back_rewards_fully">How to utilize cash back rewards fully?</string>
+    <string name="some_credit_card_issuers_offer_cash_back_on_a_credit_card_allowing_cardmembers_to_earn_back_a_percentage_of_the_money_spent_on_the_card_the_percentage_you_earn_back_and_how_the_earning_programs_operate_typically_differ_from_issuer_to_issuer_discover">Some credit card issuers offer cash back on a credit card, allowing cardmembers to earn back a percentage of the money spent on the card. The percentage you earn back and how the earning programs operate typically differ from issuer to issuer. - Discover</string>
 </resources>
