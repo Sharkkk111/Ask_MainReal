@@ -10,7 +10,6 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class HomePage extends AppCompatActivity {
-
     Button credit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
