@@ -23,10 +23,11 @@ public class HomePage extends AppCompatActivity {
         credit.setOnClickListener(new View.OnClickListener(){
         @Override
         public void onClick(View view){
-            if(sp.getInt("credit",0) ==0){
+            int lesson = sp.getInt("creditLesson", 0);
+            if(lesson ==0){
             Intent intent = new Intent(HomePage.this,LessonOneCredit.class);
             startActivity(intent);}
-            if(sp.getInt("credit",0)==1){
+            else if(lesson==1){
                 Intent intent = new Intent(HomePage.this,LessonTwoCredit.class);
                 startActivity(intent);}
             }
