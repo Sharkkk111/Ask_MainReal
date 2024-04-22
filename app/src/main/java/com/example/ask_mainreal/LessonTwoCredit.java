@@ -19,9 +19,9 @@ public class LessonTwoCredit extends AppCompatActivity {
         setContentView(R.layout.lesson1_1_2);
         Log.d("Hi", "setContentView(R.layout.lesson_1)");
         VideoView videoView = (VideoView) findViewById(R.id.videoView1_1_2);  //casting to VideoView is not Strictly required above API level 26
-        videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.how_do_credit_cards_work); //set the path of the video that we need to use in our VideoView
+        videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.what_is_cash_back_on_a_credit_card_discover_card_smarts); //set the path of the video that we need to use in our VideoView
         videoView.start();  //start() method of the VideoView class will start the video to play
-        Log.d("Shaurya", "android.resource:// + getPackageName() + R.raw.how_do_credit_cards_work");
+        Log.d("Shaurya", "android.resource:// + getPackageName() + R.what_is_cash _back_on_a_credit_card_ discover_card_smarts");
         home = findViewById(R.id.home);
         home.setOnClickListener(new View.OnClickListener(){
             @Override
