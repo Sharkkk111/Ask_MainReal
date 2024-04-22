@@ -39,13 +39,43 @@
         app:layout_constraintVertical_bias="0.459" />
 
 
+    <Button
+        android:id="@+id/enter10"
+        android:layout_width="83dp"
+        android:layout_height="41dp"
+        android:background="@drawable/green_btn"
+        android:text="submit"
+        android:textSize="10sp"
+        android:theme="@style/Button.Green"
+        app:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.718" />
+
+    <Button
+        android:id="@+id/enter1"
+        android:layout_width="83dp"
+        android:layout_height="41dp"
+        android:background="@drawable/green_btn"
+        android:text="submit"
+        android:textSize="10sp"
+        android:theme="@style/Button.Green"
+        app:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.978" />
+
     <TextView
         android:id="@+id/textView01"
         android:layout_width="356dp"
         android:layout_height="94dp"
         android:background="@drawable/box"
         android:gravity="center"
-        android:text="Topic 1.1.1: What is a Credit Card?"
+        android:text="@string/topic_1_1_2_what_is_cash_back_on_a_credit_card"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,7 +91,7 @@
         android:layout_height="77dp"
         android:background="@drawable/box"
         android:gravity="center"
-        android:text="@string/What_can_you_think_of_credit_cards_as"
+        android:text="@string/what_is_cashback"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -70,86 +100,51 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.302" />
 
-
     <TextView
-        android:id="@+id/textView03"
+        android:id="@+id/textView04"
         android:layout_width="340dp"
         android:layout_height="77dp"
         android:background="@drawable/box"
         android:gravity="center"
-        android:text="@string/What_can_you_think_of_credit_cards_as"
+        android:text="@string/how_are_cashback_earnings_limited"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.548" />
+        app:layout_constraintVertical_bias="0.571" />
 
-
-    <Button
-        android:id="@+id/a"
-        android:layout_width="296dp"
-        android:layout_height="58dp"
-        android:background="@drawable/green_btn"
-        android:text="@string/a_1_1_1"
-        android:theme="@style/Button.Green"
-        app:backgroundTint="@color/green"
+    <TextView
+        android:id="@+id/textView05"
+        android:layout_width="340dp"
+        android:layout_height="77dp"
+        android:background="@drawable/box"
+        android:gravity="center"
+        android:text="@string/how_to_utilize_cash_back_rewards_fully"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.652" />
+        app:layout_constraintVertical_bias="0.845" />
 
-
-    <Button
-        android:id="@+id/b"
-        android:layout_width="296dp"
-        android:layout_height="58dp"
-        android:background="@drawable/green_btn"
-        android:text="@string/b_1_1_1"
-        android:theme="@style/Button.Green"
-        app:backgroundTint="@color/green"
+    <EditText
+        android:id="@+id/editText06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="630dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="56dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/enter_answer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.739" />
-
-
-    <Button
-        android:id="@+id/c"
-        android:layout_width="296dp"
-        android:layout_height="58dp"
-        android:background="@drawable/green_btn"
-        android:text="@string/c_1_1_1"
-        android:theme="@style/Button.Green"
-        app:backgroundTint="@color/green"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.826" />
-
-
-    <Button
-        android:id="@+id/d"
-        android:layout_width="296dp"
-        android:layout_height="58dp"
-        android:background="@drawable/green_btn"
-        android:text="@string/d_1_1_1"
-        android:theme="@style/Button.Green"
-        app:backgroundTint="@color/green"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.913" />
-
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editText"
@@ -168,6 +163,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editText01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="451dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="235dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/enter_answer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
