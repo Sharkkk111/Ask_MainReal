@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <Button
         android:id="@+id/home"
         android:layout_width="83dp"
@@ -22,6 +21,53 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.008" />
 
+    <TextView
+        android:id="@+id/textView01"
+        android:layout_width="356dp"
+        android:layout_height="94dp"
+        android:background="@drawable/box"
+        android:gravity="center"
+        android:text="Topic 1.2.1: What is a Debit Card?"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <TextView
+        android:id="@+id/textView02"
+        android:layout_width="340dp"
+        android:layout_height="77dp"
+        android:background="@drawable/box"
+        android:gravity="center"
+        android:text="Where are funds directly drawn from for debit cards?"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.302" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="416dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/enter_answer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/enter"
@@ -38,47 +84,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.459" />
 
-
-    <TextView
-        android:id="@+id/textView01"
-        android:layout_width="356dp"
-        android:layout_height="94dp"
-        android:background="@drawable/box"
-        android:gravity="center"
-        android:text="Topic 1.1.1: What is a Credit Card?"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.105" />
-
-
-    <TextView
-        android:id="@+id/textView02"
-        android:layout_width="340dp"
-        android:layout_height="77dp"
-        android:background="@drawable/box"
-        android:gravity="center"
-        android:text="@string/What_can_you_think_of_credit_cards_as"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.302" />
-
-
     <TextView
         android:id="@+id/textView03"
         android:layout_width="340dp"
         android:layout_height="77dp"
         android:background="@drawable/box"
         android:gravity="center"
-        android:text="@string/What_can_you_think_of_credit_cards_as"
-        android:textSize="20dp"
+        android:text="What happens if you do not have enough funds in the account but try to make a transaction?"
+        android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
@@ -86,13 +99,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.548" />
 
-
     <Button
         android:id="@+id/a"
         android:layout_width="296dp"
         android:layout_height="58dp"
         android:background="@drawable/green_btn"
-        android:text="@string/a_1_1_1"
+        android:text="A. Card works"
         android:theme="@style/Button.Green"
         app:backgroundTint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -102,13 +114,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.652" />
 
-
     <Button
         android:id="@+id/b"
         android:layout_width="296dp"
         android:layout_height="58dp"
         android:background="@drawable/green_btn"
-        android:text="@string/b_1_1_1"
+        android:text="B. A loan is given to cover the cost"
         android:theme="@style/Button.Green"
         app:backgroundTint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -118,13 +129,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.739" />
 
-
     <Button
         android:id="@+id/c"
         android:layout_width="296dp"
         android:layout_height="58dp"
         android:background="@drawable/green_btn"
-        android:text="@string/c_1_1_1"
+        android:text="C. Card declines"
         android:theme="@style/Button.Green"
         app:backgroundTint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -134,13 +144,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.826" />
 
-
     <Button
         android:id="@+id/d"
         android:layout_width="296dp"
         android:layout_height="58dp"
         android:background="@drawable/green_btn"
-        android:text="@string/d_1_1_1"
+        android:text="D. I don’t know"
         android:theme="@style/Button.Green"
         app:backgroundTint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -149,25 +158,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.913" />
-
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="270dp"
-        android:layout_marginEnd="130dp"
-        android:layout_marginBottom="416dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="@string/enter_answer"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

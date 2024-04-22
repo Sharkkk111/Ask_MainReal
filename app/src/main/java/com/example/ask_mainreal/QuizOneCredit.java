@@ -1,5 +1,6 @@
 package com.example.ask_mainreal;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -23,9 +24,6 @@ public class QuizOneCredit extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         sp = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
-        editor.putBoolean("answer1", false);
-        editor.putBoolean("answer2", false);
-        editor.apply();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz1_1_1);
 
@@ -33,6 +31,7 @@ public class QuizOneCredit extends AppCompatActivity{
         submit = findViewById(R.id.enter);
 
         submit.setOnClickListener(new View.OnClickListener(){
+            @SuppressLint("ApplySharedPref")
             @Override
             public void onClick(View view){
                 ShortAnswerStr = ShortAnswer.getText().toString();
@@ -41,7 +40,7 @@ public class QuizOneCredit extends AppCompatActivity{
                     editor.putBoolean("answer1", true);
                     if (sp.getBoolean("answer2", false)) {
                         editor.putInt("creditLesson", 1);
-                        editor.apply();
+                        editor.commit();
                         Intent intent = new Intent(QuizOneCredit.this, LessonComplete.class);
                         startActivity(intent);}
                 }
@@ -81,10 +80,10 @@ public class QuizOneCredit extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 editor.putBoolean("answer2", true);
-                editor.apply();
+                editor.commit();
                 if (sp.getBoolean("answer1", false)) {
                     editor.putInt("creditLesson", 1);
-                    editor.apply();
+                    editor.commit();
                     Intent intent = new Intent(QuizOneCredit.this, LessonComplete.class);
                     startActivity(intent);
                 }
