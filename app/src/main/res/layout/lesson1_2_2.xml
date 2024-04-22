@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="83dp"
+        android:layout_height="41dp"
+        android:background="@drawable/green_btn"
+        android:text="@string/home"
+        android:textSize="10sp"
+        android:theme="@style/Button.Green"
+        app:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008" />
+
+    <VideoView
+        android:id="@+id/videoView1_2_2"
+        android:layout_width="315dp"
+        android:layout_height="265dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="298dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView102"
+        android:layout_width="356dp"
+        android:layout_height="94dp"
+        android:background="@drawable/box"
+        android:gravity="center"
+        android:text="Topic 1.2.2: How is it different from a credit card?"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <TextView
+        android:id="@+id/textView103"
+        android:layout_width="309dp"
+        android:layout_height="58dp"
+        android:background="@drawable/box"
+        android:gravity="center"
+        android:text= "While credit and debit cards look the same, their use is entirely different. This video covers the key benefits of using credit or debit, such as travel and rewards or direct access to your money. They also review some things to look out for, like annual fees, high interest, credit or debit card fraud, and purchase protection. - Mint.com"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.67" />
+
+    <Button
+        android:id="@+id/button_front_page55"
+        android:layout_width="269dp"
+        android:layout_height="71dp"
+        android:background="@drawable/box"
+        android:text="Quiz me"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.819" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="269dp"
+        android:layout_height="71dp"
+        android:background="@drawable/box"
+        android:text="Go Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.951" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
