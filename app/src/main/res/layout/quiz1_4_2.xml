@@ -27,7 +27,7 @@
         android:layout_height="94dp"
         android:background="@drawable/box"
         android:gravity="center"
-        android:text="Topic 1.3.1: When to choose cash or credit?"
+        android:text="Topic 1.4.2: When to use a credit score?"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,8 +42,8 @@
         android:layout_height="77dp"
         android:background="@drawable/box"
         android:gravity="center"
-        android:text="Which of the following can you earn through a credit card? (select all that apply)"
-        android:textSize="18dp"
+        android:text="What does a credit score tell someone?"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
@@ -51,27 +51,60 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.302" />
 
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="416dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/enter_answer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
     <Button
-        android:id="@+id/b"
-        android:layout_width="296dp"
-        android:layout_height="58dp"
+        android:id="@+id/enter"
+        android:layout_width="83dp"
+        android:layout_height="41dp"
         android:background="@drawable/green_btn"
-        android:text="B. Cash back"
+        android:text="submit"
+        android:textSize="10sp"
         android:theme="@style/Button.Green"
         app:backgroundTint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.459" />
+
+    <TextView
+        android:id="@+id/textView03"
+        android:layout_width="340dp"
+        android:layout_height="77dp"
+        android:background="@drawable/box"
+        android:gravity="center"
+        android:text="What does a good credit score give you?"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.548" />
 
     <Button
         android:id="@+id/a"
         android:layout_width="296dp"
         android:layout_height="58dp"
         android:background="@drawable/green_btn"
-        android:text="A. Miles"
+        android:text="A. Best interest rates"
         android:theme="@style/Button.Green"
         app:backgroundTint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -79,14 +112,29 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.411" />
+        app:layout_constraintVertical_bias="0.652" />
+
+    <Button
+        android:id="@+id/b"
+        android:layout_width="296dp"
+        android:layout_height="58dp"
+        android:background="@drawable/green_btn"
+        android:text="B. Borrowing more money"
+        android:theme="@style/Button.Green"
+        app:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.739" />
 
     <Button
         android:id="@+id/c"
         android:layout_width="296dp"
         android:layout_height="58dp"
         android:background="@drawable/green_btn"
-        android:text="C. A drivers license"
+        android:text="C. Longer loan periods"
         android:theme="@style/Button.Green"
         app:backgroundTint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -94,14 +142,14 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.585" />
+        app:layout_constraintVertical_bias="0.826" />
 
     <Button
         android:id="@+id/d"
         android:layout_width="296dp"
         android:layout_height="58dp"
         android:background="@drawable/green_btn"
-        android:text="D. A phone"
+        android:text="D. Nothing"
         android:theme="@style/Button.Green"
         app:backgroundTint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -109,6 +157,6 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.673" />
+        app:layout_constraintVertical_bias="0.913" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
