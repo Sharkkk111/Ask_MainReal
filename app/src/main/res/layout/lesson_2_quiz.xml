@@ -24,7 +24,7 @@
 
 
     <Button
-        android:id="@+id/enter"
+        android:id="@+id/cashback_enter"
         android:layout_width="83dp"
         android:layout_height="41dp"
         android:background="@drawable/green_btn"
@@ -40,7 +40,7 @@
 
 
     <Button
-        android:id="@+id/enter10"
+        android:id="@+id/limits_enter"
         android:layout_width="83dp"
         android:layout_height="41dp"
         android:background="@drawable/green_btn"
@@ -55,7 +55,7 @@
         app:layout_constraintVertical_bias="0.718" />
 
     <Button
-        android:id="@+id/enter1"
+        android:id="@+id/rewards_enter"
         android:layout_width="83dp"
         android:layout_height="41dp"
         android:background="@drawable/green_btn"
@@ -131,7 +131,7 @@
         app:layout_constraintVertical_bias="0.845" />
 
     <EditText
-        android:id="@+id/editText06"
+        android:id="@+id/rewards"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
@@ -147,7 +147,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/cashback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="71dp"
@@ -165,7 +165,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editText01"
+        android:id="@+id/limits"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"

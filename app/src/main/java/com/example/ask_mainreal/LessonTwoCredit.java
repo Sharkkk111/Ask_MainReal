@@ -13,6 +13,7 @@ public class LessonTwoCredit extends AppCompatActivity {
 
     Button home;
     Button back;
+    Button quizme;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +38,16 @@ public class LessonTwoCredit extends AppCompatActivity {
             public void onClick(View view){
                 Intent intent = new Intent(LessonTwoCredit.this,MainActivityThree.class );
                 startActivity(intent);
+            }
+        });
+
+        quizme = findViewById(R.id.quizme);
+        quizme.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(LessonTwoCredit.this, QuizOneCredit.class );
+                startActivity(intent);
+
             }
         });
     }
