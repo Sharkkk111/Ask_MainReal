@@ -39,6 +39,34 @@
             android:exported="false"
             android:theme="@style/Theme.Ask_MainReal"/>
         <activity
+            android:name=".Lesson_1_2_1"
+            android:exported="false"
+            android:theme="@style/Theme.Ask_MainReal"/>
+        <activity
+            android:name=".Lesson_1_2_2"
+            android:exported="false"
+            android:theme="@style/Theme.Ask_MainReal"/>
+        <activity
+            android:name=".Lesson_1_2_3"
+            android:exported="false"
+            android:theme="@style/Theme.Ask_MainReal"/>
+        <activity
+            android:name=".Lesson_1_3_1"
+            android:exported="false"
+            android:theme="@style/Theme.Ask_MainReal"/>
+        <activity
+            android:name=".Lesson_1_4_1"
+            android:exported="false"
+            android:theme="@style/Theme.Ask_MainReal"/>
+        <activity
+            android:name=".Lesson_1_4_2"
+            android:exported="false"
+            android:theme="@style/Theme.Ask_MainReal"/>
+        <activity
+            android:name=".Lesson_1_4_3"
+            android:exported="false"
+            android:theme="@style/Theme.Ask_MainReal"/>
+        <activity
             android:name=".Test"
             android:exported="true"
             android:theme="@style/Theme.Ask_MainReal">
