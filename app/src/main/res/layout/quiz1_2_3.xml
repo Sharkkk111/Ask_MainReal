@@ -27,7 +27,7 @@
         android:layout_height="94dp"
         android:background="@drawable/box"
         android:gravity="center"
-        android:text="Topic 1.2.2: How is it different from a credit card?"
+        android:text="Topic 1.2.3: Pros and Cons"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,39 +39,24 @@
     <TextView
         android:id="@+id/textView03"
         android:layout_width="340dp"
-        android:layout_height="50dp"
+        android:layout_height="30dp"
         android:background="@drawable/box"
         android:gravity="center"
-        android:text="Links directly to the bank account"
+        android:text="All debit cards require fees"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.29" />
-
-    <TextView
-        android:id="@+id/textView04"
-        android:layout_width="340dp"
-        android:layout_height="50dp"
-        android:background="@drawable/box"
-        android:gravity="center"
-        android:text="This card is a loan"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.441" />
+        app:layout_constraintVertical_bias="0.416" />
 
     <Button
-        android:id="@+id/choose4"
+        android:id="@+id/choose2"
         android:layout_width="83dp"
         android:layout_height="41dp"
         android:background="@drawable/green_btn"
-        android:text="debit"
+        android:text="false"
         android:textSize="10sp"
         android:theme="@style/Button.Green"
         app:backgroundTint="@color/green"
@@ -80,14 +65,30 @@
         app:layout_constraintHorizontal_bias="0.689"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.507" />
+        app:layout_constraintVertical_bias="0.466" />
+
+    <Button
+        android:id="@+id/choose4"
+        android:layout_width="83dp"
+        android:layout_height="41dp"
+        android:background="@drawable/green_btn"
+        android:text="false"
+        android:textSize="10sp"
+        android:theme="@style/Button.Green"
+        app:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.689"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
 
     <Button
         android:id="@+id/choose3"
         android:layout_width="83dp"
         android:layout_height="41dp"
         android:background="@drawable/green_btn"
-        android:text="credit"
+        android:text="true"
         android:textSize="10sp"
         android:theme="@style/Button.Green"
         app:backgroundTint="@color/green"
@@ -96,7 +97,85 @@
         app:layout_constraintHorizontal_bias="0.298"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.507" />
+        app:layout_constraintVertical_bias="0.6" />
+
+    <Button
+        android:id="@+id/choose1"
+        android:layout_width="83dp"
+        android:layout_height="41dp"
+        android:background="@drawable/green_btn"
+        android:text="true"
+        android:textSize="10sp"
+        android:theme="@style/Button.Green"
+        app:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.298"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <Button
+        android:id="@+id/choose5"
+        android:layout_width="83dp"
+        android:layout_height="41dp"
+        android:background="@drawable/green_btn"
+        android:text="true"
+        android:textSize="10sp"
+        android:theme="@style/Button.Green"
+        app:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.298"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.731" />
+
+    <Button
+        android:id="@+id/choose6"
+        android:layout_width="83dp"
+        android:layout_height="41dp"
+        android:background="@drawable/green_btn"
+        android:text="false"
+        android:textSize="10sp"
+        android:theme="@style/Button.Green"
+        app:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.689"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.731" />
+
+    <TextView
+        android:id="@+id/textView05"
+        android:layout_width="340dp"
+        android:layout_height="30dp"
+        android:background="@drawable/box"
+        android:gravity="center"
+        android:text="Improve the users credit score"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.677" />
+
+    <TextView
+        android:id="@+id/textView04"
+        android:layout_width="340dp"
+        android:layout_height="30dp"
+        android:background="@drawable/box"
+        android:gravity="center"
+        android:text="Debit cards limit the users spending"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.547" />
 
     <TextView
         android:id="@+id/textView02"
@@ -104,187 +183,12 @@
         android:layout_height="50dp"
         android:background="@drawable/box"
         android:gravity="center"
-        android:text="For each of the following statements, choose which card it applies to"
+        android:text="True or False"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.29" />
+        app:layout_constraintVertical_bias="0.302" />
 
-    <TextView
-        android:id="@+id/textView05"
-        android:layout_width="340dp"
-        android:layout_height="50dp"
-        android:background="@drawable/box"
-        android:gravity="center"
-        android:text="Accompanied with additional rewards"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.591" />
-
-    <Button
-        android:id="@+id/choose5"
-        android:layout_width="83dp"
-        android:layout_height="41dp"
-        android:background="@drawable/green_btn"
-        android:text="credit"
-        android:textSize="10sp"
-        android:theme="@style/Button.Green"
-        app:backgroundTint="@color/green"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.298"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.655" />
-
-    <Button
-        android:id="@+id/choose6"
-        android:layout_width="83dp"
-        android:layout_height="41dp"
-        android:background="@drawable/green_btn"
-        android:text="debit"
-        android:textSize="10sp"
-        android:theme="@style/Button.Green"
-        app:backgroundTint="@color/green"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.689"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.655" />
-
-    <TextView
-        android:id="@+id/textView06"
-        android:layout_width="340dp"
-        android:layout_height="50dp"
-        android:background="@drawable/box"
-        android:gravity="center"
-        android:text="Can be used with an ATM"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.74" />
-
-    <Button
-        android:id="@+id/choose8"
-        android:layout_width="83dp"
-        android:layout_height="41dp"
-        android:background="@drawable/green_btn"
-        android:text="debit"
-        android:textSize="10sp"
-        android:theme="@style/Button.Green"
-        app:backgroundTint="@color/green"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.689"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.802" />
-
-    <Button
-        android:id="@+id/choose7"
-        android:layout_width="83dp"
-        android:layout_height="41dp"
-        android:background="@drawable/green_btn"
-        android:text="credit"
-        android:textSize="10sp"
-        android:theme="@style/Button.Green"
-        app:backgroundTint="@color/green"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.298"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.802" />
-
-    <Button
-        android:id="@+id/choose2"
-        android:layout_width="83dp"
-        android:layout_height="41dp"
-        android:background="@drawable/green_btn"
-        android:text="debit"
-        android:textSize="10sp"
-        android:theme="@style/Button.Green"
-        app:backgroundTint="@color/green"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.689"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.359" />
-
-    <Button
-        android:id="@+id/choose1"
-        android:layout_width="83dp"
-        android:layout_height="41dp"
-        android:background="@drawable/green_btn"
-        android:text="credit"
-        android:textSize="10sp"
-        android:theme="@style/Button.Green"
-        app:backgroundTint="@color/green"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.298"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.359" />
-
-    <TextView
-        android:id="@+id/textView07"
-        android:layout_width="340dp"
-        android:layout_height="50dp"
-        android:background="@drawable/box"
-        android:gravity="center"
-        android:text="Can be used with an ATM"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.892" />
-
-    <Button
-        android:id="@+id/choose10"
-        android:layout_width="83dp"
-        android:layout_height="41dp"
-        android:background="@drawable/green_btn"
-        android:text="debit"
-        android:textSize="10sp"
-        android:theme="@style/Button.Green"
-        app:backgroundTint="@color/green"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.689"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.953" />
-
-    <Button
-        android:id="@+id/choose9"
-        android:layout_width="83dp"
-        android:layout_height="41dp"
-        android:background="@drawable/green_btn"
-        android:text="credit"
-        android:textSize="10sp"
-        android:theme="@style/Button.Green"
-        app:backgroundTint="@color/green"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.298"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.953" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
