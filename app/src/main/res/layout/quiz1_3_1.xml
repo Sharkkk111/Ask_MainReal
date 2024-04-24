@@ -42,7 +42,7 @@
         android:layout_height="77dp"
         android:background="@drawable/box"
         android:gravity="center"
-        android:text="Which of the following can you earn through a credit card? (select all that apply)"
+        android:text="Which of the following can you earn through a credit card? (select two answers)"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
