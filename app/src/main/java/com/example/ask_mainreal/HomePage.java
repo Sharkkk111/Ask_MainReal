@@ -32,4 +32,7 @@ public class HomePage extends AppCompatActivity {
             }
 
         });}
+
+    public static class Lesson_1_2_3 {
+    }
 }
