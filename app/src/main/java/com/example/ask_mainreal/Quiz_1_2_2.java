@@ -13,7 +13,7 @@ public class Quiz_1_2_2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.);
+        setContentView(R.layout.quiz1_2_2);
         button1 = findViewById(R.id.home);
         button1.setOnClickListener(new View.OnClickListener(){
             @Override
