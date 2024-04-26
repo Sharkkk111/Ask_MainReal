@@ -1,8 +1,6 @@
 package com.example.ask_mainreal;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -17,7 +15,7 @@ public class Lesson_1_4_1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.lesson_1_4_1);
+        setContentView(R.layout.lesson1_4_1);
         button1 = findViewById(R.id.home);
 
         VideoView videoView01 = (VideoView) findViewById(R.id.videoView1_4_1);  //casting to VideoView is not Strictly required above API level 26
