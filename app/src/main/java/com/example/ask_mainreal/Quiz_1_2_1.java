@@ -25,7 +25,7 @@ public class Quiz_1_2_1 extends AppCompatActivity{
         sp = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.quiz1_1_1);
+        setContentView(R.layout.quiz1_2_1);
 
         ShortAnswer = findViewById(R.id.editText);
         submit = findViewById(R.id.enter);

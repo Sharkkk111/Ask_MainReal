@@ -15,11 +15,11 @@ public class QuizOneCredit extends AppCompatActivity{
     Button b;
     Button c;
     Button d;
-    Button choice;
     Button submit;
     EditText ShortAnswer;
     SharedPreferences sp;
     String ShortAnswerStr;
+    Button home;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         sp = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
