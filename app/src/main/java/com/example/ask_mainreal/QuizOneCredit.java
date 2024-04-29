@@ -27,6 +27,15 @@ public class QuizOneCredit extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz1_1_1);
 
+        home = findViewById(R.id.home);
+        home.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(QuizOneCredit.this, HomePage.class );
+                startActivity(intent);
+            }
+        });
+
         ShortAnswer = findViewById(R.id.editText);
         submit = findViewById(R.id.enter);
 

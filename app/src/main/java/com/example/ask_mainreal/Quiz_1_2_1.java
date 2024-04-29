@@ -6,16 +6,17 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.os.Bundle;
+import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
-public class Quiz_1_2_1 extends AppCompatActivity{
+
+public class Quiz_1_2_1 extends AppCompatActivity {
+    Button home;
     Button a;
     Button b;
     Button c;
     Button d;
-    Button choice;
     Button submit;
     EditText ShortAnswer;
     SharedPreferences sp;
@@ -26,6 +27,15 @@ public class Quiz_1_2_1 extends AppCompatActivity{
         SharedPreferences.Editor editor = sp.edit();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz1_2_1);
+
+        home = findViewById(R.id.home);
+        home.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(Quiz_1_2_1.this, HomePage.class );
+                startActivity(intent);
+            }
+        });
 
         ShortAnswer = findViewById(R.id.editText);
         submit = findViewById(R.id.enter);
@@ -39,7 +49,7 @@ public class Quiz_1_2_1 extends AppCompatActivity{
                 if(ShortAnswerStr.equals("correct answer")){
                     editor.putBoolean("answer1", true);
                     if (sp.getBoolean("answer2", false)) {
-                        editor.putInt("creditLesson", 1);
+                        editor.putInt("creditLesson", 3);
                         editor.commit();
                         Intent intent = new Intent(Quiz_1_2_1.this, LessonComplete.class);
                         startActivity(intent);}
@@ -89,4 +99,6 @@ public class Quiz_1_2_1 extends AppCompatActivity{
                 }
             }
         });
-    }}
+
+    }
+}
