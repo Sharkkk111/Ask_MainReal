@@ -10,13 +10,10 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.ask_mainreal.HomePage;
-import com.example.ask_mainreal.MainActivityThree;
-import com.example.ask_mainreal.R;
-
 public class LessonComplete extends AppCompatActivity {
 
     Button home;
+    Button next_lesson;
     @SuppressLint("ApplySharedPref")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +30,19 @@ public class LessonComplete extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(LessonComplete.this, HomePage.class );
-                startActivity(intent);
+                startActivity(intent);}
+        });
+        next_lesson = findViewById(R.id.next_lesson);
+        next_lesson.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                int lesson = sp.getInt("creditLesson", 0);
+                if(lesson ==0){
+                    Intent intent = new Intent(LessonComplete.this,LessonOneCredit.class);
+                    startActivity(intent);}
+                else if(lesson==1){
+                    Intent intent = new Intent(LessonComplete.this,LessonTwoCredit.class);
+                    startActivity(intent);}
             }
         });
     }
