@@ -45,5 +45,6 @@ public class LessonComplete extends AppCompatActivity {
                     startActivity(intent);}
             }
         });
+
     }
 }

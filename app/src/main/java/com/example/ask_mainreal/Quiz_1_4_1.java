@@ -20,6 +20,7 @@ public class Quiz_1_4_1 extends AppCompatActivity {
             public void onClick(View view){
                 Intent intent = new Intent(Quiz_1_4_1.this, HomePage.class );
                 startActivity(intent);
+
             }
         });
     }
