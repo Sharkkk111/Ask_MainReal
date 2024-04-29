@@ -11,15 +11,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Lesson_1_2_1 extends AppCompatActivity {
 
-    Button home;
+    Button button1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lesson1_2_1);
-        home = findViewById(R.id.home);
+        button1 = findViewById(R.id.home);
 
 //got the video view from https://www.c-sharpcorner.com/article/adding-video-to-an-android-application/
-        home.setOnClickListener(new View.OnClickListener(){
+        button1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(Lesson_1_2_1.this, HomePage.class );
