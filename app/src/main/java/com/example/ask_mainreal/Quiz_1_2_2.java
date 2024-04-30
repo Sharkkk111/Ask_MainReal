@@ -54,7 +54,7 @@ public class Quiz_1_2_2 extends AppCompatActivity {
                 editor.putBoolean("answer1", true);
                 editor.commit();
                 if (sp.getBoolean("answer2", false)&&sp.getBoolean("answer3", false)&&sp.getBoolean("answer4", false)&&sp.getBoolean("answer5", false)) {
-                    editor.putInt("debitlesson", 1);
+                    editor.putInt("debitlesson", 2);
                     editor.commit();
                     Intent intent = new Intent(Quiz_1_2_2.this, LessonComplete.class);
                     startActivity(intent);
@@ -62,6 +62,20 @@ public class Quiz_1_2_2 extends AppCompatActivity {
             }
         });
 
+        credit2 = findViewById(R.id.credit2);
+        credit2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                editor.putBoolean("answer2", true);
+                editor.commit();
+                if (sp.getBoolean("answer1", false)&&sp.getBoolean("answer3", false)&&sp.getBoolean("answer4", false)&&sp.getBoolean("answer5", false)) {
+                    editor.putInt("debitlesson", 2);
+                    editor.commit();
+                    Intent intent = new Intent(Quiz_1_2_2.this, LessonComplete.class);
+                    startActivity(intent);
+                }
+            }
+        });
         debit2 = findViewById(R.id.debit2);
         debit2.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -71,12 +85,41 @@ public class Quiz_1_2_2 extends AppCompatActivity {
             }
         });
 
+        credit3 = findViewById(R.id.credit3);
+        credit3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                editor.putBoolean("answer3", true);
+                editor.commit();
+                if (sp.getBoolean("answer2", false)&&sp.getBoolean("answer1", false)&&sp.getBoolean("answer4", false)&&sp.getBoolean("answer5", false)) {
+                    editor.putInt("debitlesson", 2);
+                    editor.commit();
+                    Intent intent = new Intent(Quiz_1_2_2.this, LessonComplete.class);
+                    startActivity(intent);
+                }
+            }
+        });
         debit3 = findViewById(R.id.debit3);
         debit3.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(Quiz_1_2_2.this, Lesson_1_2_2.class );
                 startActivity(intent);
+            }
+        });
+
+        debit4 = findViewById(R.id.debit4);
+        debit4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                editor.putBoolean("answer4", true);
+                editor.commit();
+                if (sp.getBoolean("answer2", false)&&sp.getBoolean("answer3", false)&&sp.getBoolean("answer1", false)&&sp.getBoolean("answer5", false)) {
+                    editor.putInt("debitlesson", 2);
+                    editor.commit();
+                    Intent intent = new Intent(Quiz_1_2_2.this, LessonComplete.class);
+                    startActivity(intent);
+                }
             }
         });
         credit4 = findViewById(R.id.credit4);
@@ -88,6 +131,20 @@ public class Quiz_1_2_2 extends AppCompatActivity {
             }
         });
 
+        credit5 = findViewById(R.id.credit5);
+        credit5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                editor.putBoolean("answer5", true);
+                editor.commit();
+                if (sp.getBoolean("answer2", false)&&sp.getBoolean("answer3", false)&&sp.getBoolean("answer4", false)&&sp.getBoolean("answer1", false)) {
+                    editor.putInt("debitlesson", 2);
+                    editor.commit();
+                    Intent intent = new Intent(Quiz_1_2_2.this, LessonComplete.class);
+                    startActivity(intent);
+                }
+            }
+        });
         debit5 = findViewById(R.id.debit5);
         debit5.setOnClickListener(new View.OnClickListener(){
             @Override

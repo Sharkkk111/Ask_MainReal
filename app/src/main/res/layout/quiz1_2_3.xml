@@ -52,7 +52,7 @@
         app:layout_constraintVertical_bias="0.416" />
 
     <Button
-        android:id="@+id/choose2"
+        android:id="@+id/false1"
         android:layout_width="83dp"
         android:layout_height="41dp"
         android:background="@drawable/green_btn"
@@ -68,7 +68,7 @@
         app:layout_constraintVertical_bias="0.466" />
 
     <Button
-        android:id="@+id/choose4"
+        android:id="@+id/false2"
         android:layout_width="83dp"
         android:layout_height="41dp"
         android:background="@drawable/green_btn"
@@ -84,7 +84,7 @@
         app:layout_constraintVertical_bias="0.6" />
 
     <Button
-        android:id="@+id/choose3"
+        android:id="@+id/true2"
         android:layout_width="83dp"
         android:layout_height="41dp"
         android:background="@drawable/green_btn"
@@ -100,7 +100,7 @@
         app:layout_constraintVertical_bias="0.6" />
 
     <Button
-        android:id="@+id/choose1"
+        android:id="@+id/true1"
         android:layout_width="83dp"
         android:layout_height="41dp"
         android:background="@drawable/green_btn"
@@ -116,7 +116,7 @@
         app:layout_constraintVertical_bias="0.466" />
 
     <Button
-        android:id="@+id/choose5"
+        android:id="@+id/true3"
         android:layout_width="83dp"
         android:layout_height="41dp"
         android:background="@drawable/green_btn"
@@ -132,7 +132,7 @@
         app:layout_constraintVertical_bias="0.731" />
 
     <Button
-        android:id="@+id/choose6"
+        android:id="@+id/false3"
         android:layout_width="83dp"
         android:layout_height="41dp"
         android:background="@drawable/green_btn"
