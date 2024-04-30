@@ -55,7 +55,7 @@ public class Quiz_1_2_1 extends AppCompatActivity {
                         startActivity(intent);}
                 }
                 else{
-                    Intent intent = new Intent(Quiz_1_2_1.this, LessonOneCredit.class );
+                    Intent intent = new Intent(Quiz_1_2_1.this, Lesson_1_2_1.class );
                     startActivity(intent);
                 }
                 editor.apply();
@@ -65,7 +65,7 @@ public class Quiz_1_2_1 extends AppCompatActivity {
         a.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(Quiz_1_2_1.this, LessonOneCredit.class );
+                Intent intent = new Intent(Quiz_1_2_1.this, Lesson_1_2_1.class );
                 startActivity(intent);
             }
         });
@@ -73,7 +73,7 @@ public class Quiz_1_2_1 extends AppCompatActivity {
         c.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(Quiz_1_2_1.this, LessonOneCredit.class );
+                Intent intent = new Intent(Quiz_1_2_1.this, Lesson_1_2_1.class );
                 startActivity(intent);
             }
         });
@@ -81,7 +81,7 @@ public class Quiz_1_2_1 extends AppCompatActivity {
         d.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(Quiz_1_2_1.this, LessonOneCredit.class );
+                Intent intent = new Intent(Quiz_1_2_1.this, Lesson_1_2_1.class );
                 startActivity(intent);
             }
         });
@@ -92,7 +92,7 @@ public class Quiz_1_2_1 extends AppCompatActivity {
                 editor.putBoolean("answer2", true);
                 editor.commit();
                 if (sp.getBoolean("answer1", false)) {
-                    editor.putInt("creditLesson", 1);
+                    editor.putInt("creditLesson", 2);
                     editor.commit();
                     Intent intent = new Intent(Quiz_1_2_1.this, LessonComplete.class);
                     startActivity(intent);
