@@ -38,10 +38,10 @@ public class LessonComplete extends AppCompatActivity {
             public void onClick(View view){
                 int lesson = sp.getInt("creditLesson", 0);
                 if(lesson ==0){
-                    Intent intent = new Intent(LessonComplete.this,LessonOneCredit.class);
+                    Intent intent = new Intent(LessonComplete.this, LessonOneCredit.class);
                     startActivity(intent);}
                 else if(lesson==1){
-                    Intent intent = new Intent(LessonComplete.this,LessonTwoCredit.class);
+                    Intent intent = new Intent(LessonComplete.this, LessonTwoCredit.class);
                     startActivity(intent);}
             }
         });

@@ -15,17 +15,26 @@ public class QuizOneCredit extends AppCompatActivity{
     Button b;
     Button c;
     Button d;
-    Button choice;
     Button submit;
     EditText ShortAnswer;
     SharedPreferences sp;
     String ShortAnswerStr;
+    Button home;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         sp = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz1_1_1);
+
+        home = findViewById(R.id.home);
+        home.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(QuizOneCredit.this, HomePage.class );
+                startActivity(intent);
+            }
+        });
 
         ShortAnswer = findViewById(R.id.editText);
         submit = findViewById(R.id.enter);

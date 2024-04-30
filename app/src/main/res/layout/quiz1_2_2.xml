@@ -67,7 +67,7 @@
         app:layout_constraintVertical_bias="0.441" />
 
     <Button
-        android:id="@+id/choose4"
+        android:id="@+id/debit2"
         android:layout_width="83dp"
         android:layout_height="41dp"
         android:background="@drawable/green_btn"
@@ -83,7 +83,7 @@
         app:layout_constraintVertical_bias="0.507" />
 
     <Button
-        android:id="@+id/choose3"
+        android:id="@+id/credit2"
         android:layout_width="83dp"
         android:layout_height="41dp"
         android:background="@drawable/green_btn"
@@ -129,7 +129,7 @@
         app:layout_constraintVertical_bias="0.591" />
 
     <Button
-        android:id="@+id/choose5"
+        android:id="@+id/credit3"
         android:layout_width="83dp"
         android:layout_height="41dp"
         android:background="@drawable/green_btn"
@@ -145,7 +145,7 @@
         app:layout_constraintVertical_bias="0.655" />
 
     <Button
-        android:id="@+id/choose6"
+        android:id="@+id/debit3"
         android:layout_width="83dp"
         android:layout_height="41dp"
         android:background="@drawable/green_btn"
@@ -176,7 +176,7 @@
         app:layout_constraintVertical_bias="0.74" />
 
     <Button
-        android:id="@+id/choose8"
+        android:id="@+id/debit4"
         android:layout_width="83dp"
         android:layout_height="41dp"
         android:background="@drawable/green_btn"
@@ -192,7 +192,7 @@
         app:layout_constraintVertical_bias="0.802" />
 
     <Button
-        android:id="@+id/choose7"
+        android:id="@+id/credit4"
         android:layout_width="83dp"
         android:layout_height="41dp"
         android:background="@drawable/green_btn"
@@ -208,7 +208,7 @@
         app:layout_constraintVertical_bias="0.802" />
 
     <Button
-        android:id="@+id/choose2"
+        android:id="@+id/debit1"
         android:layout_width="83dp"
         android:layout_height="41dp"
         android:background="@drawable/green_btn"
@@ -224,7 +224,7 @@
         app:layout_constraintVertical_bias="0.359" />
 
     <Button
-        android:id="@+id/choose1"
+        android:id="@+id/credit1"
         android:layout_width="83dp"
         android:layout_height="41dp"
         android:background="@drawable/green_btn"
@@ -255,7 +255,7 @@
         app:layout_constraintVertical_bias="0.892" />
 
     <Button
-        android:id="@+id/choose10"
+        android:id="@+id/debit5"
         android:layout_width="83dp"
         android:layout_height="41dp"
         android:background="@drawable/green_btn"
@@ -271,7 +271,7 @@
         app:layout_constraintVertical_bias="0.953" />
 
     <Button
-        android:id="@+id/choose9"
+        android:id="@+id/credit5"
         android:layout_width="83dp"
         android:layout_height="41dp"
         android:background="@drawable/green_btn"
