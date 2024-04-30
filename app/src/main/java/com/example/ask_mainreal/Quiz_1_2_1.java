@@ -49,7 +49,7 @@ public class Quiz_1_2_1 extends AppCompatActivity {
                 if(ShortAnswerStr.equals("correct answer")){
                     editor.putBoolean("answer1", true);
                     if (sp.getBoolean("answer2", false)) {
-                        editor.putInt("creditLesson", 3);
+                        editor.putInt("debitlesson", 1);
                         editor.commit();
                         Intent intent = new Intent(Quiz_1_2_1.this, LessonComplete.class);
                         startActivity(intent);}
@@ -69,8 +69,8 @@ public class Quiz_1_2_1 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        c = findViewById(R.id.c);
-        c.setOnClickListener(new View.OnClickListener(){
+        b = findViewById(R.id.b);
+        b.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(Quiz_1_2_1.this, Lesson_1_2_1.class );
@@ -85,14 +85,14 @@ public class Quiz_1_2_1 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        b = findViewById(R.id.b);
-        b.setOnClickListener(new View.OnClickListener() {
+        c = findViewById(R.id.c);
+        c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 editor.putBoolean("answer2", true);
                 editor.commit();
                 if (sp.getBoolean("answer1", false)) {
-                    editor.putInt("creditLesson", 2);
+                    editor.putInt("debitlesson", 1);
                     editor.commit();
                     Intent intent = new Intent(Quiz_1_2_1.this, LessonComplete.class);
                     startActivity(intent);
