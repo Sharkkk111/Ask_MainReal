@@ -50,6 +50,7 @@ public class Quiz_1_1_2 extends AppCompatActivity{
                     editor.putBoolean("answer1", true);
                     if (sp.getBoolean("answer2", false) && sp.getBoolean("answer3", false)) {
                         editor.putInt("creditLesson", 2);
+                        editor.putBoolean("credit", true);
                         editor.commit();
                         Intent intent = new Intent(Quiz_1_1_2.this, LessonComplete.class);
                         startActivity(intent);}
@@ -75,6 +76,7 @@ public class Quiz_1_1_2 extends AppCompatActivity{
                     editor.putBoolean("answer2", true);
                     if (sp.getBoolean("answer1", false) && sp.getBoolean("answer3", false)) {
                         editor.putInt("creditLesson", 2);
+                        editor.putBoolean("credit", true);
                         editor.commit();
                         Intent intent = new Intent(Quiz_1_1_2.this, LessonComplete.class);
                         startActivity(intent);}
@@ -99,6 +101,7 @@ public class Quiz_1_1_2 extends AppCompatActivity{
                     editor.putBoolean("answer3", true);
                     if (sp.getBoolean("answer1", false) && sp.getBoolean("answer2", false)) {
                         editor.putInt("creditLesson", 2);
+                        editor.putBoolean("credit", true);
                         editor.commit();
                         Intent intent = new Intent(Quiz_1_1_2.this, LessonComplete.class);
                         startActivity(intent);}
