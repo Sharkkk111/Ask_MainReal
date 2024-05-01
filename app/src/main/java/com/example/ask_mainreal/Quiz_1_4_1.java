@@ -21,7 +21,8 @@ public class Quiz_1_4_1 extends AppCompatActivity {
     EditText ShortAnswer;
     SharedPreferences sp;
     String ShortAnswerStr;
-    Button home;    @Override
+    Button home;
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         sp = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
@@ -47,7 +48,7 @@ public class Quiz_1_4_1 extends AppCompatActivity {
                 if(ShortAnswerStr.equals("correct answer")){
                     editor.putBoolean("answer1", true);
                     if (sp.getBoolean("answer2", false)) {
-                        editor.putInt("creditLesson", 1);
+                        editor.putInt("creditScoreLesson", 1);
                         editor.commit();
                         Intent intent = new Intent(Quiz_1_4_1.this, LessonComplete.class);
                         startActivity(intent);}
@@ -90,7 +91,7 @@ public class Quiz_1_4_1 extends AppCompatActivity {
                 editor.putBoolean("answer2", true);
                 editor.commit();
                 if (sp.getBoolean("answer1", false)) {
-                    editor.putInt("creditLesson", 1);
+                    editor.putInt("creditScoreLesson", 1);
                     editor.commit();
                     Intent intent = new Intent(Quiz_1_4_1.this, LessonComplete.class);
                     startActivity(intent);
