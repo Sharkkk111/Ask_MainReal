@@ -44,8 +44,10 @@ public class Quiz_1_4_1 extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 ShortAnswerStr = ShortAnswer.getText().toString();
+                ShortAnswerStr = ShortAnswerStr.replaceAll("\\s|-", "");
+                ShortAnswerStr  = ShortAnswerStr.replaceAll("\\s| ", "");
 
-                if(ShortAnswerStr.equals("correct answer")){
+                if(ShortAnswerStr.equals("300850")){
                     editor.putBoolean("answer1", true);
                     if (sp.getBoolean("answer2", false)) {
                         editor.putInt("creditScoreLesson", 1);
