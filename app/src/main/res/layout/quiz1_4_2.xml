@@ -59,7 +59,7 @@
         android:layout_height="94dp"
         android:background="@drawable/box"
         android:gravity="center"
-        android:text="Topic 1.4.2: When to use a credit score?"
+        android:text="@string/topic_1_4_2_when_to_use_a_credit_score"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
