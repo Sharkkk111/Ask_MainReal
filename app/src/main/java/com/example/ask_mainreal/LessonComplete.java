@@ -19,11 +19,6 @@ public class LessonComplete extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        SharedPreferences sp = getApplicationContext().getSharedPreferences("Preferences", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sp.edit();
-        editor.putBoolean("answer1", false);
-        editor.putBoolean("answer2", false);
-        editor.commit();
         setContentView(R.layout.lesson_complete);
 
         home = findViewById(R.id.home);

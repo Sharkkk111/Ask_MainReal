@@ -24,13 +24,13 @@ public class LessonOneCredit extends AppCompatActivity {
     Button quizme;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.lesson1_1_1);
-
         SharedPreferences sp = getApplicationContext().getSharedPreferences("Preferences", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
-        editor.putInt("creditLesson", 0);
-        editor.apply();
+        editor.putBoolean("answer1", false);
+        editor.putBoolean("answer2", false);
+        editor.commit();
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.lesson1_1_1);
 
         Log.d("Hi", "setContentView(R.layout.lesson_1)");
         VideoView videoView = (VideoView) findViewById(R.id.videoView);  //casting to VideoView is not Strictly required above API level 26
