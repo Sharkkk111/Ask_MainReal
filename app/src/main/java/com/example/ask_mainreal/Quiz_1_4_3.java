@@ -25,6 +25,9 @@ public class Quiz_1_4_3 extends AppCompatActivity {
         SharedPreferences.Editor editor = sp.edit();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz1_4_3);
+
+
+
         home = findViewById(R.id.home);
         home.setOnClickListener(new View.OnClickListener(){
             @Override
