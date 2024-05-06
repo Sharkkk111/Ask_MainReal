@@ -32,7 +32,7 @@ public class LessonTwoCredit extends AppCompatActivity {
             }
         });
 
-        back = findViewById(R.id.back_button);
+        back = findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -45,9 +45,8 @@ public class LessonTwoCredit extends AppCompatActivity {
         quizme.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(LessonTwoCredit.this, QuizOneCredit.class );
+                Intent intent = new Intent(LessonTwoCredit.this, Quiz_1_1_2.class );
                 startActivity(intent);
-
             }
         });
     }
