@@ -68,7 +68,7 @@
         app:layout_constraintVertical_bias="0.67" />
 
     <Button
-        android:id="@+id/button_front_page55"
+        android:id="@+id/quizme"
         android:layout_width="269dp"
         android:layout_height="71dp"
         android:background="@drawable/box"
@@ -80,7 +80,7 @@
         app:layout_constraintVertical_bias="0.819" />
 
     <Button
-        android:id="@+id/back_button"
+        android:id="@+id/back"
         android:layout_width="269dp"
         android:layout_height="71dp"
         android:background="@drawable/box"

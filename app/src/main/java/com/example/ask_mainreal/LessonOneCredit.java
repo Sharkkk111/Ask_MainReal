@@ -21,7 +21,6 @@ public class LessonOneCredit extends AppCompatActivity {
 
     Button home;
     Button back;
-
     Button quizme;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
