@@ -28,6 +28,7 @@
                 android:textSize="10sp"
                 android:theme="@style/Button.Green"
                 app:backgroundTint="@color/green"
+                android:layout_marginTop="500dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.046"

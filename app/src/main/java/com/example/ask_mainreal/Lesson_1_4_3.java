@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.os.Bundle;
+import android.widget.MediaController;
 import android.widget.VideoView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +18,23 @@ public class Lesson_1_4_3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lesson1_4_3);
+
+
+
+
+        VideoView videoView = (VideoView) findViewById(R.id.videoView1_4_3);  //casting to VideoView is not Strictly required above API level 26
+        videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.how_to_build_credit_and_improve_your_credit_score); //set the path of the video that we need to use in our VideoView
+        videoView.start();  //start() method of the VideoView class will start the video to play
+        Log.d("Shaurya", "android.resource:// + getPackageName() + R.raw.how_do_credit_cards_work");
+        MediaController mediaController = new MediaController(this);
+        //link mediaController to videoView
+        mediaController.setAnchorView(videoView);
+        //allow mediaController to control our videoView
+        videoView.setMediaController(mediaController);
+        videoView.start();
+
+
+
         home.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
