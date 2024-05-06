@@ -1,5 +1,11 @@
 package com.example.ask_mainreal;
 
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.widget.MediaController;
+import android.widget.VideoView;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -32,6 +38,13 @@ public class LessonOneCredit extends AppCompatActivity {
         videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.how_do_credit_cards_work); //set the path of the video that we need to use in our VideoView
         videoView.start();  //start() method of the VideoView class will start the video to play
         Log.d("Shaurya", "android.resource:// + getPackageName() + R.raw.how_do_credit_cards_work");
+
+        MediaController mediaController = new MediaController(this);
+        //link mediaController to videoView
+        mediaController.setAnchorView(videoView);
+        //allow mediaController to control our videoView
+        videoView.setMediaController(mediaController);
+        videoView.start();
 //got the video view from https://www.c-sharpcorner.com/article/adding-video-to-an-android-application/
         home = findViewById(R.id.home);
         home.setOnClickListener(new View.OnClickListener(){
