@@ -10,26 +10,38 @@ import android.widget.VideoView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Lesson_1_4_3 extends AppCompatActivity {
-
-    Button button1;
+    Button home;
+    Button back;
+    Button quizme;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lesson1_4_3);
-        button1 = findViewById(R.id.home);
-
-        VideoView videoView01 = (VideoView) findViewById(R.id.videoView1_4_3);  //casting to VideoView is not Strictly required above API level 26
-        videoView01.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.how_to_build_credit_and_improve_your_credit_score); //set the path of the video that we need to use in our VideoView
-        videoView01.start();  //start() method of the VideoView class will start the video to play
-        Log.d("Shaurya", "android.resource:// + getPackageName() + R.raw.how_do_credit_cards_work");
-
-
-        button1.setOnClickListener(new View.OnClickListener(){
+        home.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(Lesson_1_4_3.this, HomePage.class );
+                Intent intent = new Intent(Lesson_1_4_3.this, HomePage.class);
                 startActivity(intent);
             }
         });
+        back = findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(Lesson_1_4_3.this,MainActivityThree.class);
+                startActivity(intent);
+            }
+        });
+
+
+        quizme = findViewById(R.id.quizme);
+        quizme.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(Lesson_1_4_3.this,Quiz_1_4_3.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

@@ -40,7 +40,7 @@ public class Lesson_1_4_2 extends AppCompatActivity {
         quizme.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(.this,.class);
+                Intent intent = new Intent(Lesson_1_4_2.this,Quiz_1_4_2.class);
                 startActivity(intent);
             }
         });
