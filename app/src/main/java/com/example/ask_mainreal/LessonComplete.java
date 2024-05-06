@@ -15,9 +15,10 @@ public class LessonComplete extends AppCompatActivity {
     Button home;
     Button next_lesson;
     Button explore;
-    @SuppressLint("ApplySharedPref")
+    SharedPreferences sp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        SharedPreferences sp = getApplicationContext().getSharedPreferences("Preferences", Context.MODE_PRIVATE);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lesson_complete);
 
