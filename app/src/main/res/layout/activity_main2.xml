@@ -96,7 +96,7 @@
         </TableRow>
         <TableRow>
             <Button
-                android:id="@+id/debit"
+                android:id="@+id/debit1"
                 android:layout_width="258dp"
                 android:layout_height="66dp"
                 android:background="@drawable/green_btn"
@@ -145,7 +145,7 @@
 
         <TableRow>
             <Button
-                android:id="@+id/cash"
+                android:id="@+id/cash1"
                 android:layout_width="258dp"
                 android:layout_height="66dp"
                 android:background="@drawable/green_btn"
@@ -176,7 +176,7 @@
         </TableRow>
         <TableRow>
             <Button
-                android:id="@+id/cash_choose"
+                android:id="@+id/cash2"
                 android:layout_width="177dp"
                 android:layout_height="46dp"
                 android:text="choose this lesson"
@@ -188,5 +188,40 @@
                 app:layout_constraintVertical_bias="0.851"
                 android:layout_marginBottom="15dp"/>
         </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/credit_score1"
+                android:layout_width="258dp"
+                android:layout_height="66dp"
+                android:background="@drawable/green_btn"
+                android:text="@string/credit_score"
+                android:theme="@style/Button.Green"
+                app:backgroundTint="@color/green"
+                tools:layout_editor_absoluteX="51dp"
+                tools:layout_editor_absoluteY="289dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/imageView120"
+                android:layout_width="235dp"
+                android:layout_height="91dp"
+                app:srcCompat="@drawable/credit_score"
+                tools:layout_editor_absoluteX="107dp"
+                tools:layout_editor_absoluteY="323dp" />
+        </TableRow>
+        <Button
+            android:id="@+id/credit_score2"
+            android:layout_width="177dp"
+            android:layout_height="46dp"
+            android:text="choose this lesson"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.851"
+            android:layout_marginBottom="15dp"/>
     </TableLayout>
 </ScrollView>
