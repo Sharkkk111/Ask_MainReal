@@ -11,7 +11,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Lesson_1_2_2 extends AppCompatActivity {
 
-    Button button1;
+    Button home;
+    Button back;
+    Button quizme;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,14 +27,31 @@ public class Lesson_1_2_2 extends AppCompatActivity {
 //got the video view from https://www.c-sharpcorner.com/article/adding-video-to-an-android-application/
 //got the video view from https://www.c-sharpcorner.com/article/adding-video-to-an-android-application/
 
-        button1 = findViewById(R.id.home);
-
-        button1.setOnClickListener(new View.OnClickListener(){
+        home.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(Lesson_1_2_2.this, HomePage.class );
                 startActivity(intent);
             }
         });
+        back = findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(Lesson_1_2_2.this,MainActivityThree.class );
+                startActivity(intent);
+            }
+        });
+
+
+        quizme = findViewById(R.id.quizme);
+        quizme.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(Lesson_1_2_2.this, Quiz_1_2_2.class );
+                startActivity(intent);
+            }
+        });
+
     }
 }
