@@ -63,8 +63,7 @@ public class LessonTwoCredit extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(LessonTwoCredit.this, Quiz_1_1_2.class );
-                startActivity(intent);
-            }
+                startActivity(intent);}
         });
     }
 }
