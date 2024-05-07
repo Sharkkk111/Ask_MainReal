@@ -21,7 +21,7 @@ public class LessonOneCredit extends AppCompatActivity {
 
     Button home;
     Button back;
-    Button quizme;
+    Button quiz;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         SharedPreferences sp = getApplicationContext().getSharedPreferences("Preferences", Context.MODE_PRIVATE);
@@ -45,6 +45,15 @@ public class LessonOneCredit extends AppCompatActivity {
         videoView.setMediaController(mediaController);
         videoView.start();
 //got the video view from https://www.c-sharpcorner.com/article/adding-video-to-an-android-application/
+        quiz = findViewById(R.id.quiz);
+        quiz.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LessonOneCredit.this, QuizOneCredit.class);
+                startActivity(intent);
+            }
+        });
+
         home = findViewById(R.id.home);
         home.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -54,7 +63,7 @@ public class LessonOneCredit extends AppCompatActivity {
             }
         });
 
-        back = findViewById(R.id.back_button);
+        back = findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -63,14 +72,5 @@ public class LessonOneCredit extends AppCompatActivity {
             }
         });
 
-        quizme = findViewById(R.id.quizme_button);
-        quizme.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                Intent intent = new Intent(LessonOneCredit.this, QuizOneCredit.class );
-                startActivity(intent);
-
-            }
-        });
     }
 }
