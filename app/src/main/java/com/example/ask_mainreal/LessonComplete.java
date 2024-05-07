@@ -40,7 +40,7 @@ public class LessonComplete extends AppCompatActivity {
         next_lesson.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                if (!sp.getBoolean("credit", false)){
+                if (sp.getBoolean("credit", false)){
                     int lesson = sp.getInt("creditLesson", 0);
                     if(lesson ==0){
                         Intent intent = new Intent(LessonComplete.this, LessonOneCredit.class);
@@ -48,7 +48,7 @@ public class LessonComplete extends AppCompatActivity {
                     else if(lesson==1){
                         Intent intent = new Intent(LessonComplete.this, LessonTwoCredit.class);
                         startActivity(intent);}}
-                else if (!sp.getBoolean("debit", false)){
+                else if (sp.getBoolean("debit", false)){
                     int lesson = sp.getInt("creditLesson", 0);
                     if(lesson ==0){
                         Intent intent = new Intent(LessonComplete.this, Lesson_1_2_1.class);
@@ -59,12 +59,12 @@ public class LessonComplete extends AppCompatActivity {
                     else if(lesson==2){
                         Intent intent = new Intent(LessonComplete.this, Lesson_1_2_3.class);
                         startActivity(intent);}}
-                else if (!sp.getBoolean("cash", false)){
+                else if (sp.getBoolean("cash", false)){
                     int lesson = sp.getInt("creditLesson", 0);
                     if(lesson ==0){
                         Intent intent = new Intent(LessonComplete.this,Lesson_1_2_3.class);
                         startActivity(intent);}}
-                else if (!sp.getBoolean("credit", false)){
+                else if (sp.getBoolean("credit", false)){
                     int lesson = sp.getInt("creditScore", 0);
                     if(lesson ==0){
                         Intent intent = new Intent(LessonComplete.this, Lesson_1_4_1.class);
