@@ -44,6 +44,7 @@ public class Lesson_1_2_2 extends AppCompatActivity {
 //got the video view from https://www.c-sharpcorner.com/article/adding-video-to-an-android-application/
 //got the video view from https://www.c-sharpcorner.com/article/adding-video-to-an-android-application/
 
+        home = findViewById(R.id.home);
         home.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
