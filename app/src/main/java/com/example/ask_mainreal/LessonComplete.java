@@ -49,7 +49,7 @@ public class LessonComplete extends AppCompatActivity {
                         Intent intent = new Intent(LessonComplete.this, LessonTwoCredit.class);
                         startActivity(intent);}}
                 else if (sp.getBoolean("debit", false)){
-                    int lesson = sp.getInt("creditLesson", 0);
+                    int lesson = sp.getInt("debitlesson", 0);
                     if(lesson ==0){
                         Intent intent = new Intent(LessonComplete.this, Lesson_1_2_1.class);
                         startActivity(intent);}
@@ -60,12 +60,10 @@ public class LessonComplete extends AppCompatActivity {
                         Intent intent = new Intent(LessonComplete.this, Lesson_1_2_3.class);
                         startActivity(intent);}}
                 else if (sp.getBoolean("cash", false)){
-                    int lesson = sp.getInt("creditLesson", 0);
-                    if(lesson ==0){
                         Intent intent = new Intent(LessonComplete.this,Lesson_1_2_3.class);
-                        startActivity(intent);}}
+                        startActivity(intent);}
                 else if (sp.getBoolean("credit", false)){
-                    int lesson = sp.getInt("creditScore", 0);
+                    int lesson = sp.getInt("creditScoreLesson", 0);
                     if(lesson ==0){
                         Intent intent = new Intent(LessonComplete.this, Lesson_1_4_1.class);
                         startActivity(intent);}
