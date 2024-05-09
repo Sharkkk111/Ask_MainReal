@@ -78,7 +78,7 @@
         android:layout_height="77dp"
         android:background="@drawable/box"
         android:gravity="center"
-        android:text="@string/What_can_you_think_of_credit_cards_as"
+        android:text="@string/If_you_pay_the_minimum"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
