@@ -45,8 +45,9 @@ public class Quiz_1_1_2 extends AppCompatActivity{
             @Override
             public void onClick(View view){
                 Cashback = CashbackShortAnswer.getText().toString();
+                Cashback = Cashback.toLowerCase();
 
-                if(Cashback.equals("correct answer")){
+                if(Cashback.equals("credit perk")||Cashback.equals("a credit perk")||Cashback.equals("credit perks")){
                     editor.putBoolean("answer1", true);
                     if (sp.getBoolean("answer2", false) && sp.getBoolean("answer3", false)) {
                         editor.putInt("creditLesson", 2);
@@ -71,8 +72,9 @@ public class Quiz_1_1_2 extends AppCompatActivity{
             @Override
             public void onClick(View view){
                 Limits = LimitsShortAnswer.getText().toString();
+                Limits = Limits.toLowerCase();
 
-                if(Limits.equals("sample")){
+                if(Limits.equals("limits")||Limits.equals("a limit")||Limits.equals("caps")||Limits.equals("a cap")){
                     editor.putBoolean("answer2", true);
                     if (sp.getBoolean("answer1", false) && sp.getBoolean("answer3", false)) {
                         editor.putInt("creditLesson", 2);
@@ -96,8 +98,9 @@ public class Quiz_1_1_2 extends AppCompatActivity{
             @Override
             public void onClick(View view){
                 Rewards = RewardsShortAnswer.getText().toString();
+                Rewards = Rewards.toLowerCase();
 
-                if(Rewards.equals("example")){
+                if(Rewards.equals("read terms")||Rewards.equals("read the terms")){
                     editor.putBoolean("answer3", true);
                     if (sp.getBoolean("answer1", false) && sp.getBoolean("answer2", false)) {
                         editor.putInt("creditLesson", 2);

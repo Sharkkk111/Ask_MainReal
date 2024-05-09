@@ -45,8 +45,9 @@ public class Quiz_1_2_1 extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 ShortAnswerStr = ShortAnswer.getText().toString();
+                ShortAnswerStr= ShortAnswerStr.toLowerCase();
 
-                if(ShortAnswerStr.equals("correct answer")){
+                if(ShortAnswerStr.equals("your own checking account")||ShortAnswerStr.equals("checking account")||ShortAnswerStr.equals("personal checking account")||ShortAnswerStr.equals("your checking account")){
                     editor.putBoolean("answer1", true);
                     if (sp.getBoolean("answer2", false)) {
                         editor.putInt("debitlesson", 1);

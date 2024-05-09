@@ -44,8 +44,9 @@ public class QuizOneCredit extends AppCompatActivity{
             @Override
             public void onClick(View view){
                 ShortAnswerStr = ShortAnswer.getText().toString();
+                ShortAnswerStr = ShortAnswerStr.toLowerCase();
 
-                if(ShortAnswerStr.equals("correct answer")){
+                if(ShortAnswerStr.equals("a loan")||ShortAnswerStr.equals("loans")||ShortAnswerStr.equals("loan")){
                     editor.putBoolean("answer1", true);
                     if (sp.getBoolean("answer2", false)) {
                         editor.putInt("creditLesson", 1);
