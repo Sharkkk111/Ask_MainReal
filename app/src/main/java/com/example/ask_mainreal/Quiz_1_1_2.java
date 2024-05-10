@@ -47,7 +47,7 @@ public class Quiz_1_1_2 extends AppCompatActivity{
                 Cashback = CashbackShortAnswer.getText().toString();
                 Cashback = Cashback.toLowerCase();
 
-                if(Cashback.equals("credit perk")||Cashback.equals("a credit perk")||Cashback.equals("credit perks")){
+                if(Cashback.equals("credit perk")||Cashback.equals("a credit perk")){
                     editor.putBoolean("answer1", true);
                     if (sp.getBoolean("answer2", false) && sp.getBoolean("answer3", false)) {
                         editor.putInt("creditLesson", 2);
