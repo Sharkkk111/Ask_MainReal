@@ -42,7 +42,7 @@ public class Lesson_1_4_2 extends AppCompatActivity {
 
 
 
-
+        home = findViewById(R.id.home);
         home.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){

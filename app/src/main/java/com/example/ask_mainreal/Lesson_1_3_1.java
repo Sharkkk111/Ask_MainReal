@@ -42,6 +42,7 @@ public class Lesson_1_3_1 extends AppCompatActivity {
         videoView.start();
 //got the video view from https://www.c-sharpcorner.com/article/adding-video-to-an-android-application/
 
+        home = findViewById(R.id.home);
         home.setOnClickListener(new View.OnClickListener(){
             @Override
             /*

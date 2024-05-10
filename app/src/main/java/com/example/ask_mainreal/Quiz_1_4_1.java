@@ -40,7 +40,6 @@ public class Quiz_1_4_1 extends AppCompatActivity {
         submit = findViewById(R.id.enter);
 
         submit.setOnClickListener(new View.OnClickListener(){
-            @SuppressLint("ApplySharedPref")
             @Override
             public void onClick(View view){
                 ShortAnswerStr = ShortAnswer.getText().toString();

@@ -86,7 +86,11 @@ public class LessonComplete extends AppCompatActivity {
                         startActivity(intent);}
                     else if(lesson==2){
                         Intent intent = new Intent(LessonComplete.this, Lesson_1_4_3.class);
-                        startActivity(intent);}}
+                        startActivity(intent);}
+                    else{
+                        Intent intent = new Intent(LessonComplete.this, HomePage.class);
+                        startActivity(intent);}
+                }
             }
         });
 
