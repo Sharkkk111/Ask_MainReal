@@ -75,10 +75,10 @@ public class HomePage extends AppCompatActivity {
                     Intent intent = new Intent(HomePage.this, Lesson_1_4_1.class);
                     startActivity(intent);}
                 else if(lesson==1){
-                    Intent intent = new Intent(HomePage.this, LessonTwoCredit.class);
+                    Intent intent = new Intent(HomePage.this, Lesson_1_4_2.class);
                     startActivity(intent);}
                 else if(lesson==2){
-                    Intent intent = new Intent(HomePage.this, LessonTwoCredit.class);
+                    Intent intent = new Intent(HomePage.this, Lesson_1_4_3.class);
                     startActivity(intent);}}
             }
         });
