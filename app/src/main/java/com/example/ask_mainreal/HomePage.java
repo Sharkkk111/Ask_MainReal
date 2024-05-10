@@ -59,7 +59,6 @@ public class HomePage extends AppCompatActivity {
         cash.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                int lesson = sp.getInt("cashLesson", 0);
                 if(!sp.getBoolean("cash", false) && sp.getBoolean("debit", false) && sp.getBoolean("credit", false)){
                         Intent intent = new Intent(HomePage.this,Lesson_1_3_1.class);
                         startActivity(intent);}
@@ -70,6 +69,7 @@ public class HomePage extends AppCompatActivity {
         credit_score.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
+                if(!sp.getBoolean("creditScore", false) &&sp.getBoolean("cash", false) && sp.getBoolean("debit", false) && sp.getBoolean("credit", false)){
                 int lesson = sp.getInt("creditScore", 0);
                 if(lesson ==0){
                     Intent intent = new Intent(HomePage.this, Lesson_1_4_1.class);
@@ -79,7 +79,7 @@ public class HomePage extends AppCompatActivity {
                     startActivity(intent);}
                 else if(lesson==2){
                     Intent intent = new Intent(HomePage.this, LessonTwoCredit.class);
-                    startActivity(intent);}
+                    startActivity(intent);}}
             }
         });
 
