@@ -14,12 +14,16 @@ public class HomePage extends AppCompatActivity {
     Button debit;
     Button cash;
     Button credit_score;
+    SharedPreferences sp;
+    /*
+    This opens th
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_page);
 
-        SharedPreferences sp = getApplicationContext().getSharedPreferences("Preferences", Context.MODE_PRIVATE);
+         sp = getApplicationContext().getSharedPreferences("Preferences", Context.MODE_PRIVATE);
 
         credit=findViewById(R.id.credit1);
         credit.setOnClickListener(new View.OnClickListener(){
