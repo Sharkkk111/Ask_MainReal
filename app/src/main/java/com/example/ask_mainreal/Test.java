@@ -16,7 +16,6 @@ public class Test extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        sp.Editor.clear();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
