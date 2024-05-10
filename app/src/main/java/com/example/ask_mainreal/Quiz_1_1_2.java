@@ -41,7 +41,6 @@ public class Quiz_1_1_2 extends AppCompatActivity{
         submitCashback = findViewById(R.id.cashback_enter);
 
         submitCashback.setOnClickListener(new View.OnClickListener(){
-            @SuppressLint("ApplySharedPref")
             @Override
             public void onClick(View view){
                 Cashback = CashbackShortAnswer.getText().toString();
@@ -68,7 +67,6 @@ public class Quiz_1_1_2 extends AppCompatActivity{
         submitLimits = findViewById(R.id.limits_enter);
 
         submitLimits.setOnClickListener(new View.OnClickListener(){
-            @SuppressLint("ApplySharedPref")
             @Override
             public void onClick(View view){
                 Limits = LimitsShortAnswer.getText().toString();
@@ -94,7 +92,6 @@ public class Quiz_1_1_2 extends AppCompatActivity{
         RewardsShortAnswer = findViewById(R.id.rewards);
         submitRewards = findViewById(R.id.rewards_enter);
         submitRewards.setOnClickListener(new View.OnClickListener(){
-            @SuppressLint("ApplySharedPref")
             @Override
             public void onClick(View view){
                 Rewards = RewardsShortAnswer.getText().toString();
