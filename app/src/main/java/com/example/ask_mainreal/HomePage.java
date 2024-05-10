@@ -23,7 +23,7 @@ public class HomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_page);
 
-         sp = getApplicationContext().getSharedPreferences("Preferences", Context.MODE_PRIVATE);
+        sp = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
 
         credit=findViewById(R.id.credit1);
         credit.setOnClickListener(new View.OnClickListener(){

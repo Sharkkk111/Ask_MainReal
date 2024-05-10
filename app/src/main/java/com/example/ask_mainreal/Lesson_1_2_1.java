@@ -19,7 +19,7 @@ public class Lesson_1_2_1 extends AppCompatActivity {
     Button quizme;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        SharedPreferences sp = getApplicationContext().getSharedPreferences("Preferences", Context.MODE_PRIVATE);
+        SharedPreferences sp = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
         editor.putBoolean("answer1", false);
         editor.putBoolean("answer2", false);
