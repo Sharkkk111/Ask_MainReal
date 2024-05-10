@@ -12,7 +12,6 @@ public class Test extends AppCompatActivity {
 
     Button button1;
     Button button2;
-    SharedPreferences sp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
