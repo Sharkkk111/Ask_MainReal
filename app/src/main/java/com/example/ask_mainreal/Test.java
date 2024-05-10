@@ -24,7 +24,7 @@ public class Test extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-         button2 = findViewById(R.id.home);
+        button2 = findViewById(R.id.home);
         button2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
