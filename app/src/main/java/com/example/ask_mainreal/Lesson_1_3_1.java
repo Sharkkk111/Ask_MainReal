@@ -43,6 +43,9 @@ public class Lesson_1_3_1 extends AppCompatActivity {
 
         home.setOnClickListener(new View.OnClickListener(){
             @Override
+            /*
+
+             */
             public void onClick(View view){
                 Intent intent = new Intent(Lesson_1_3_1.this, HomePage.class );
                 startActivity(intent);
