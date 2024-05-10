@@ -12,12 +12,10 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Quiz_1_2_2 extends AppCompatActivity {
 
     Button home;
-    Button credit1;
     Button credit2;
     Button credit3;
     Button credit4;
     Button credit5;
-    Button debit1;
     Button debit2;
     Button debit3;
     Button debit4;
@@ -36,29 +34,6 @@ public class Quiz_1_2_2 extends AppCompatActivity {
             public void onClick(View view){
                 Intent intent = new Intent(Quiz_1_2_2.this, HomePage.class );
                 startActivity(intent);
-            }
-        });
-
-        credit1 = findViewById(R.id.credit1);
-        credit1.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                Intent intent = new Intent(Quiz_1_2_2.this, Lesson_1_2_2.class );
-                startActivity(intent);
-            }
-        });
-        debit1 = findViewById(R.id.debit1);
-        debit1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                editor.putBoolean("answer1", true);
-                editor.commit();
-                if (sp.getBoolean("answer2", false)&&sp.getBoolean("answer3", false)&&sp.getBoolean("answer4", false)&&sp.getBoolean("answer5", false)) {
-                    editor.putInt("debitLesson", 2);
-                    editor.commit();
-                    Intent intent = new Intent(Quiz_1_2_2.this, LessonComplete.class);
-                    startActivity(intent);
-                }
             }
         });
 
