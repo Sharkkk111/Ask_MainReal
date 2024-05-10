@@ -50,7 +50,7 @@ public class LessonComplete extends AppCompatActivity {
         next_lesson = findViewById(R.id.next_lesson);
         next_lesson.setOnClickListener(new View.OnClickListener(){
             /*
-            This activates when the start next lesson button is clicked and checks what , which opens the apps starting page with the list of available modules.
+            This activates when the start next lesson button is clicked and checks shared preferences for the booleans representing each lesson then when it finds the first false boolean it checks what the specific lesson integer is and opens the corresponding lesson page.
              */
             @Override
             public void onClick(View view){
@@ -92,6 +92,9 @@ public class LessonComplete extends AppCompatActivity {
 
         back = findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener(){
+            /*
+            This activates when the start next lesson button is clicked and checks shared preferences for the booleans representing each lesson then when it finds the first false boolean it checks what the specific lesson integer is, the code will then set the lesson back to two lessons adjusting the lesson booleans and integers in Shared Preferences when necessary. It will go to the lesson just before the one that was last completed. After completing the first credit lesson this button will just reset to the first credit lesson.
+             */
             @Override
             public void onClick(View view){
                 if (!sp.getBoolean("credit", false)){

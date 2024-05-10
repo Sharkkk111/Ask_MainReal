@@ -41,7 +41,7 @@ public class Lesson_1_4_3 extends AppCompatActivity {
         videoView.start();
 
 
-
+        home = findViewById(R.id.home);
         home.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
