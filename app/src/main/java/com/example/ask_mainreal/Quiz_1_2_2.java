@@ -145,6 +145,7 @@ public class Quiz_1_2_2 extends AppCompatActivity {
                 }
             }
         });
+
         debit5 = findViewById(R.id.debit5);
         debit5.setOnClickListener(new View.OnClickListener(){
             @Override
