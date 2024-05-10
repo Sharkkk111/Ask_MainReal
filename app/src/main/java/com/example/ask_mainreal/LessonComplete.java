@@ -110,13 +110,13 @@ public class LessonComplete extends AppCompatActivity {
                 else if (!sp.getBoolean("debit", false)){
                     int lesson = sp.getInt("debitLesson", 0);
                     if(lesson ==0){
-                        editor.putInt("creditlesson", 0);
+                        editor.putInt("creditLesson", 0);
                         editor.putBoolean("credit", false);
                         editor.commit();
                         Intent intent = new Intent(LessonComplete.this, LessonOneCredit.class);
                         startActivity(intent);}
                     else if(lesson==1){
-                        editor.putInt("creditlesson", 1);
+                        editor.putInt("creditLesson", 1);
                         editor.putBoolean("credit", false);
                         editor.commit();
                         Intent intent = new Intent(LessonComplete.this, LessonTwoCredit.class);
