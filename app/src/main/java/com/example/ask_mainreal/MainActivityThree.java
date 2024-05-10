@@ -82,8 +82,8 @@ public class MainActivityThree extends AppCompatActivity {
                     else if(lesson==1){
                         Intent intent = new Intent(MainActivityThree.this,Lesson_1_2_2.class);
                         startActivity(intent);}
-                    else if(lesson==2){
-                        Intent intent = new Intent(MainActivityThree.this,Lesson_1_2_3.class);
+                    else{
+                        Intent intent = new Intent(MainActivityThree.this, Lesson_1_2_3.class);
                         startActivity(intent);}
                 }
             }

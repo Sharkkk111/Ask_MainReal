@@ -70,8 +70,8 @@ public class LessonComplete extends AppCompatActivity {
                     else if(lesson==1){
                         Intent intent = new Intent(LessonComplete.this, Lesson_1_2_2.class);
                         startActivity(intent);}
-                    else if(lesson==2){
-                        Intent intent = new Intent(LessonComplete.this, Test.class);
+                    else if(lesson ==2){
+                        Intent intent = new Intent(LessonComplete.this, Lesson_1_2_3.class);
                         startActivity(intent);}}
                 else if (!sp.getBoolean("cash", false)){
                         Intent intent = new Intent(LessonComplete.this,Lesson_1_3_1.class);

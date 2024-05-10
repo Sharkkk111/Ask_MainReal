@@ -43,7 +43,7 @@ public class Quiz_1_2_2 extends AppCompatActivity {
             public void onClick(View view) {
                 editor.putBoolean("answer2", true);
                 editor.commit();
-                if (sp.getBoolean("answer1", false)&&sp.getBoolean("answer3", false)&&sp.getBoolean("answer4", false)&&sp.getBoolean("answer5", false)) {
+                if (sp.getBoolean("answer3", false)&&sp.getBoolean("answer4", false)&&sp.getBoolean("answer5", false)) {
                     editor.putInt("debitLesson", 2);
                     editor.commit();
                     Intent intent = new Intent(Quiz_1_2_2.this, LessonComplete.class);
@@ -66,7 +66,7 @@ public class Quiz_1_2_2 extends AppCompatActivity {
             public void onClick(View view) {
                 editor.putBoolean("answer3", true);
                 editor.commit();
-                if (sp.getBoolean("answer2", false)&&sp.getBoolean("answer1", false)&&sp.getBoolean("answer4", false)&&sp.getBoolean("answer5", false)) {
+                if (sp.getBoolean("answer2", false)&&sp.getBoolean("answer4", false)&&sp.getBoolean("answer5", false)) {
                     editor.putInt("debitLesson", 2);
                     editor.commit();
                     Intent intent = new Intent(Quiz_1_2_2.this, LessonComplete.class);
@@ -89,7 +89,7 @@ public class Quiz_1_2_2 extends AppCompatActivity {
             public void onClick(View view) {
                 editor.putBoolean("answer4", true);
                 editor.commit();
-                if (sp.getBoolean("answer2", false)&&sp.getBoolean("answer3", false)&&sp.getBoolean("answer1", false)&&sp.getBoolean("answer5", false)) {
+                if (sp.getBoolean("answer2", false)&&sp.getBoolean("answer3", false)&&sp.getBoolean("answer5", false)) {
                     editor.putInt("debitLesson", 2);
                     editor.commit();
                     Intent intent = new Intent(Quiz_1_2_2.this, LessonComplete.class);
@@ -112,7 +112,7 @@ public class Quiz_1_2_2 extends AppCompatActivity {
             public void onClick(View view) {
                 editor.putBoolean("answer5", true);
                 editor.commit();
-                if (sp.getBoolean("answer2", false)&&sp.getBoolean("answer3", false)&&sp.getBoolean("answer4", false)&&sp.getBoolean("answer1", false)) {
+                if (sp.getBoolean("answer2", false)&&sp.getBoolean("answer3", false)&&sp.getBoolean("answer4", false)) {
                     editor.putInt("debitLesson", 2);
                     editor.commit();
                     Intent intent = new Intent(Quiz_1_2_2.this, LessonComplete.class);

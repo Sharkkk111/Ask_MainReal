@@ -20,7 +20,7 @@ public class Lesson_1_2_3 extends AppCompatActivity {
     SharedPreferences sp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-         sp = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
+        sp = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
         editor.putBoolean("answer1", false);
         editor.putBoolean("answer2", false);
@@ -41,7 +41,7 @@ public class Lesson_1_2_3 extends AppCompatActivity {
         videoView.setMediaController(mediaController);
         videoView.start();
 //got the video view from https://www.c-sharpcorner.com/article/adding-video-to-an-android-application/
-
+        home = findViewById(R.id.home);
         home.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
