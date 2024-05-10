@@ -22,9 +22,10 @@ public class LessonOneCredit extends AppCompatActivity {
     Button home;
     Button back;
     Button quiz;
+    SharedPreferences sp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        SharedPreferences sp = getApplicationContext().getSharedPreferences("Preferences", Context.MODE_PRIVATE);
+         sp = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
         editor.putBoolean("answer1", false);
         editor.putBoolean("answer2", false);
