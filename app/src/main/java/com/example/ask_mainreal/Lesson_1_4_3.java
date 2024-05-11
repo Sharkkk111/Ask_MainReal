@@ -16,9 +16,10 @@ public class Lesson_1_4_3 extends AppCompatActivity {
     Button home;
     Button back;
     Button quizme;
+    SharedPreferences sp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        SharedPreferences sp = getApplicationContext().getSharedPreferences("Preferences", Context.MODE_PRIVATE);
+         sp = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
         editor.putBoolean("answer1", false);
         editor.putBoolean("answer2", false);
@@ -41,7 +42,7 @@ public class Lesson_1_4_3 extends AppCompatActivity {
         videoView.start();
 
 
-
+        home = findViewById(R.id.home);
         home.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){

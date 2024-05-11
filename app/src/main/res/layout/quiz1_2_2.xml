@@ -246,7 +246,7 @@
         android:layout_height="50dp"
         android:background="@drawable/box"
         android:gravity="center"
-        android:text="Can be used with an ATM"
+        android:text="Charge’s interest and has potential annual fee"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -41,13 +41,12 @@ public class Quiz_1_1_2 extends AppCompatActivity{
         submitCashback = findViewById(R.id.cashback_enter);
 
         submitCashback.setOnClickListener(new View.OnClickListener(){
-            @SuppressLint("ApplySharedPref")
             @Override
             public void onClick(View view){
                 Cashback = CashbackShortAnswer.getText().toString();
                 Cashback = Cashback.toLowerCase();
 
-                if(Cashback.equals("credit perk")||Cashback.equals("a credit perk")||Cashback.equals("credit perks")){
+                if(Cashback.equals("credit perk")||Cashback.equals("a credit perk")){
                     editor.putBoolean("answer1", true);
                     if (sp.getBoolean("answer2", false) && sp.getBoolean("answer3", false)) {
                         editor.putInt("creditLesson", 2);
@@ -68,7 +67,6 @@ public class Quiz_1_1_2 extends AppCompatActivity{
         submitLimits = findViewById(R.id.limits_enter);
 
         submitLimits.setOnClickListener(new View.OnClickListener(){
-            @SuppressLint("ApplySharedPref")
             @Override
             public void onClick(View view){
                 Limits = LimitsShortAnswer.getText().toString();
@@ -94,7 +92,6 @@ public class Quiz_1_1_2 extends AppCompatActivity{
         RewardsShortAnswer = findViewById(R.id.rewards);
         submitRewards = findViewById(R.id.rewards_enter);
         submitRewards.setOnClickListener(new View.OnClickListener(){
-            @SuppressLint("ApplySharedPref")
             @Override
             public void onClick(View view){
                 Rewards = RewardsShortAnswer.getText().toString();

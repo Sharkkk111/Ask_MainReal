@@ -1,6 +1,7 @@
 package com.example.ask_mainreal;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.view.View;
 import android.widget.Button;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ public class Test extends AppCompatActivity {
 
     Button button1;
     Button button2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +26,7 @@ public class Test extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-         button2 = findViewById(R.id.home);
+        button2 = findViewById(R.id.home);
         button2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){

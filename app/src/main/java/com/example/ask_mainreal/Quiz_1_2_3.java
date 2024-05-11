@@ -48,7 +48,7 @@ public class Quiz_1_2_3 extends AppCompatActivity {
                 editor.putBoolean("answer1", true);
                 editor.commit();
                 if (sp.getBoolean("answer2", false)&&sp.getBoolean("answer3", false)) {
-                    editor.putInt("debitlesson", 3);
+                    editor.putInt("debitLesson", 3);
                     editor.putBoolean("debit", true);
                     editor.commit();
                     Intent intent = new Intent(Quiz_1_2_3.this, LessonComplete.class);
@@ -72,7 +72,7 @@ public class Quiz_1_2_3 extends AppCompatActivity {
                 editor.putBoolean("answer2", true);
                 editor.commit();
                 if (sp.getBoolean("answer1", false)&&sp.getBoolean("answer3", false)) {
-                    editor.putInt("debitlesson", 3);
+                    editor.putInt("debitLesson", 3);
                     editor.putBoolean("debit", true);
                     editor.commit();
                     Intent intent = new Intent(Quiz_1_2_3.this, LessonComplete.class);
@@ -93,10 +93,10 @@ public class Quiz_1_2_3 extends AppCompatActivity {
         false3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                editor.putBoolean("answer1", true);
+                editor.putBoolean("answer3", true);
                 editor.commit();
-                if (sp.getBoolean("answer2", false)&&sp.getBoolean("answer3", false)) {
-                    editor.putInt("debitlesson", 3);
+                if (sp.getBoolean("answer2", false)&&sp.getBoolean("answer1", false)) {
+                    editor.putInt("debitLesson", 3);
                     editor.putBoolean("debit", true);
                     editor.commit();
                     Intent intent = new Intent(Quiz_1_2_3.this, LessonComplete.class);

@@ -19,12 +19,13 @@ public class MainActivityThree extends AppCompatActivity {
     Button credit_score1;
     Button credit_score2;
     Button home;
+    SharedPreferences sp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        SharedPreferences sp = getApplicationContext().getSharedPreferences("Preferences", Context.MODE_PRIVATE);
+        sp = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
 
         home = findViewById(R.id.home);
         home.setOnClickListener(new View.OnClickListener(){
@@ -81,8 +82,8 @@ public class MainActivityThree extends AppCompatActivity {
                     else if(lesson==1){
                         Intent intent = new Intent(MainActivityThree.this,Lesson_1_2_2.class);
                         startActivity(intent);}
-                    else if(lesson==2){
-                        Intent intent = new Intent(MainActivityThree.this,Lesson_1_2_3.class);
+                    else if(lesson == 2){
+                        Intent intent = new Intent(MainActivityThree.this, Lesson_1_2_3.class);
                         startActivity(intent);}
                 }
             }
@@ -111,7 +112,6 @@ public class MainActivityThree extends AppCompatActivity {
         cash1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                int lesson = sp.getInt("cashLesson", 0);
                 if(!sp.getBoolean("cash", false) && sp.getBoolean("debit", false) && sp.getBoolean("credit", false)){
                     Intent intent = new Intent(MainActivityThree.this,Lesson_1_3_1.class);
                     startActivity(intent);}
@@ -122,7 +122,6 @@ public class MainActivityThree extends AppCompatActivity {
         cash2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                int lesson = sp.getInt("cashLesson", 0);
                 if(!sp.getBoolean("cash", false) && sp.getBoolean("debit", false) && sp.getBoolean("credit", false)){
                     Intent intent = new Intent(MainActivityThree.this,Lesson_1_3_1.class);
                     startActivity(intent);}
@@ -133,16 +132,17 @@ public class MainActivityThree extends AppCompatActivity {
         credit_score1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                int lesson = sp.getInt("creditScore", 0);
+                if(!sp.getBoolean("creditScore", false) &&sp.getBoolean("cash", false) && sp.getBoolean("debit", false) && sp.getBoolean("credit", false)){
+                int lesson = sp.getInt("creditScoreLesson", 0);
                 if(lesson ==0){
                     Intent intent = new Intent(MainActivityThree.this, Lesson_1_4_1.class);
                     startActivity(intent);}
                 else if(lesson==1){
-                    Intent intent = new Intent(MainActivityThree.this, LessonTwoCredit.class);
+                    Intent intent = new Intent(MainActivityThree.this, Lesson_1_4_2.class);
                     startActivity(intent);}
                 else if(lesson==2){
-                    Intent intent = new Intent(MainActivityThree.this, LessonTwoCredit.class);
-                    startActivity(intent);}
+                    Intent intent = new Intent(MainActivityThree.this, Lesson_1_4_3.class);
+                    startActivity(intent);}}
             }
         });
 
@@ -150,16 +150,17 @@ public class MainActivityThree extends AppCompatActivity {
         credit_score2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                int lesson = sp.getInt("creditScore", 0);
+                if(!sp.getBoolean("creditScore", false) &&sp.getBoolean("cash", false) && sp.getBoolean("debit", false) && sp.getBoolean("credit", false)){
+                int lesson = sp.getInt("creditScoreLesson", 0);
                 if(lesson ==0){
                     Intent intent = new Intent(MainActivityThree.this, Lesson_1_4_1.class);
                     startActivity(intent);}
                 else if(lesson==1){
-                    Intent intent = new Intent(MainActivityThree.this, LessonTwoCredit.class);
+                    Intent intent = new Intent(MainActivityThree.this, Lesson_1_4_2.class);
                     startActivity(intent);}
                 else if(lesson==2){
-                    Intent intent = new Intent(MainActivityThree.this, LessonTwoCredit.class);
-                    startActivity(intent);}
+                    Intent intent = new Intent(MainActivityThree.this, Lesson_1_4_3.class);
+                    startActivity(intent);}}
             }
         });
 
