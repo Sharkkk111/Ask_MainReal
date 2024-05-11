@@ -42,6 +42,9 @@ public class Lesson_1_2_1 extends AppCompatActivity {
 
         home = findViewById(R.id.home);
         home.setOnClickListener(new View.OnClickListener(){
+            /*
+             Navigate to HomePage activity
+             */
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(Lesson_1_2_1.this, HomePage.class );
