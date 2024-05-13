@@ -13,21 +13,30 @@ import android.widget.VideoView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Lesson_1_4_1 extends AppCompatActivity {
-
+    // Declaring buttons and SharedPreferences object
     Button home;
     Button back;
     Button quizme;
     SharedPreferences sp;
+    /*
+     Set content view to lesson 1_4_1
+     set on click listeners for each button
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // Initialize SharedPreferences
         sp = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
+        // Initialize answer preferences
         editor.putBoolean("answer1", false);
         editor.putBoolean("answer2", false);
         editor.commit();
+
+        //set content view
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lesson1_4_1);
 
+        // Set up videoView
         VideoView videoView = (VideoView) findViewById(R.id.videoView1_4_1);  //casting to VideoView is not Strictly required above API level 26
         videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.what_is_a_credit_score_kal_penn_explains_mashable); //set the path of the video that we need to use in our VideoView
         videoView.start();  //start() method of the VideoView class will start the video to play
@@ -38,9 +47,14 @@ public class Lesson_1_4_1 extends AppCompatActivity {
         //allow mediaController to control our videoView
         videoView.setMediaController(mediaController);
         videoView.start();
-
 //got the video view from https://www.c-sharpcorner.com/article/adding-video-to-an-android-application/
+
+        // set up button using id in xml code
        home = findViewById(R.id.home);
+       /*
+        set the onClickListener for the home button
+         Navigate to HomePage class
+         */
         home.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -48,7 +62,13 @@ public class Lesson_1_4_1 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // set up button using id in xml code
         back = findViewById(R.id.back);
+        /*
+        set the onClickListener for the go back button
+         Navigate to MainActivityThree class
+         */
         back.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -57,8 +77,12 @@ public class Lesson_1_4_1 extends AppCompatActivity {
             }
         });
 
-
+        // set up button using id in xml code
         quizme = findViewById(R.id.quizme);
+        /*
+        set the onClickListener for the quiz me button
+        Navigate to Quiz_1_4_1 class
+        */
         quizme.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
