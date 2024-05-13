@@ -18,6 +18,10 @@ public class Lesson_1_2_1 extends AppCompatActivity {
     Button back;
     Button quizme;
     SharedPreferences sp;
+    /*
+    Set content view to lesson 1_2_1
+    set on click listeners for each button
+    */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Initialize SharedPreferences
@@ -27,9 +31,9 @@ public class Lesson_1_2_1 extends AppCompatActivity {
         editor.putBoolean("answer1", false);
         editor.putBoolean("answer2", false);
         editor.commit();
-        /*
-        Set content view to lesson1_2_1
-         */
+
+       // Set content view to lesson1_2_1
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lesson1_2_1);
 
@@ -47,8 +51,12 @@ public class Lesson_1_2_1 extends AppCompatActivity {
         videoView.start();
 //got the video view from https://www.c-sharpcorner.com/article/adding-video-to-an-android-application/
 
-        // Get references to button ids in xml code and set their onClickListeners
+        // Get references to button ids in xml code
         home = findViewById(R.id.home);
+        /*
+        set the onClickListener for the home button
+         Navigate to HomePage activity
+         */
         home.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -56,12 +64,13 @@ public class Lesson_1_2_1 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        // Get references to button ids in xml code and set their onClickListeners
+        // Get references to button ids in xml code
         back = findViewById(R.id.back);
+        /*
+        set the onClickListener for the go back button
+         Navigate to MainActivityThree class
+         */
         back.setOnClickListener(new View.OnClickListener(){
-            /*
-             Navigate to MainActivityThree activity
-             */
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(Lesson_1_2_1.this,MainActivityThree.class );
@@ -70,10 +79,11 @@ public class Lesson_1_2_1 extends AppCompatActivity {
         });
         // Get references to button ids in xml code and set their onClickListeners
         quizme = findViewById(R.id.quizme);
+        /*
+        set the onClickListener for the quiz me button
+        Navigate to Quiz_1_2_1 class
+        */
         quizme.setOnClickListener(new View.OnClickListener(){
-            /*
-             Navigate to Quiz_1_2_1 activity
-             */
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(Lesson_1_2_1.this, Quiz_1_2_1.class );

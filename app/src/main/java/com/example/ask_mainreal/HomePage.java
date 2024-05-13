@@ -21,6 +21,7 @@ public class HomePage extends AppCompatActivity {
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //set content view
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_page);
 
@@ -29,10 +30,15 @@ public class HomePage extends AppCompatActivity {
 
         // Initializing credit button and setting OnClickListener
         credit=findViewById(R.id.credit1);
+        /*
+        This checks if the user has completed all the credit lessons and if not what lesson they are on
+        if they are on a lesson it will open that lesson
+        if not the button does nothing
+         */
         credit.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                // Getting the lesson status from SharedPreferences
+                // Getting the credit lesson status from SharedPreferences
                 int lesson = sp.getInt("creditLesson", 0);
                 // Checking if credit lesson is not completed
                 if(!sp.getBoolean("credit", false)){
@@ -50,6 +56,11 @@ public class HomePage extends AppCompatActivity {
 
         // Initializing debit button and setting OnClickListener
         debit=findViewById(R.id.debit);
+        /*
+        This checks if the user has completed all the debit lessons and if not what lesson they are on
+        if they are on a lesson it will open that lesson
+        if not the button does nothing
+         */
         debit.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -70,8 +81,14 @@ public class HomePage extends AppCompatActivity {
                 }
             }
         });
+
         // Initializing cash button and setting OnClickListener
         cash=findViewById(R.id.cash);
+        /*
+        This checks if the user has completed all the cash lessons and if not what lesson they are on
+        if they are on a lesson it will open that lesson
+        if not the button does nothing
+         */
         cash.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -84,6 +101,11 @@ public class HomePage extends AppCompatActivity {
 
         // Initializing credit_score button and setting OnClickListener
         credit_score=findViewById(R.id.credit_score);
+        /*
+        This checks if the user has completed all the credit score lessons and if not what lesson they are on
+        if they are on a lesson it will open that lesson
+        if not the button does nothing
+         */
         credit_score.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
