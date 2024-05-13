@@ -99,6 +99,10 @@
             android:exported="false"
             android:theme="@style/Theme.Ask_MainReal"/>
         <activity
+            android:name=".ModuleComplete"
+            android:exported="false"
+            android:theme="@style/Theme.Ask_MainReal"/>
+        <activity
             android:name=".Test"
             android:exported="true"
             android:theme="@style/Theme.Ask_MainReal">
