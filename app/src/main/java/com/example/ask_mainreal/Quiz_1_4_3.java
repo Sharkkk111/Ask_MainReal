@@ -54,7 +54,7 @@ public class Quiz_1_4_3 extends AppCompatActivity {
                     editor.putInt("creditScoreLesson", 3);
                     editor.putBoolean("creditScore", true);
                     editor.commit();
-                    Intent intent = new Intent(Quiz_1_4_3.this, LessonComplete.class);
+                    Intent intent = new Intent(Quiz_1_4_3.this, ModuleComplete.class);
                     startActivity(intent);
                 }
             }
@@ -92,7 +92,7 @@ public class Quiz_1_4_3 extends AppCompatActivity {
                     if (sp.getBoolean("answer1", false)) {
                         editor.putInt("creditScoreLesson", 2);
                         editor.commit();
-                        Intent intent = new Intent(Quiz_1_4_3.this, LessonComplete.class);
+                        Intent intent = new Intent(Quiz_1_4_3.this, ModuleComplete.class);
                         startActivity(intent);
                     }
                 }
