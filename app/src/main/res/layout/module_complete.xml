@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:layout_editor_absoluteX="0dp"
-    tools:context=".module_complete"
+    tools:context=".ModuleComplete"
     tools:layout_editor_absoluteY="-43dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -69,7 +69,7 @@
             app:layout_constraintVertical_bias="0.595" />
 
         <Button
-            android:id="@+id/next_module"
+            android:id="@+id/explore"
             android:layout_width="296dp"
             android:layout_height="58dp"
             android:background="@drawable/green_btn"

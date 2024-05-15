@@ -44,7 +44,7 @@ public class ModuleComplete extends AppCompatActivity {
         explore = findViewById(R.id.explore);
         /*
         set the onClickListener for the explore other topics button
-        This activates when the explore other topics button is clicked
+        This activates when the start next module button is clicked
          then starts the Module explorer java class, labeled Test, which opens the apps starting page with the list of available modules.
          */
         explore.setOnClickListener(new View.OnClickListener(){

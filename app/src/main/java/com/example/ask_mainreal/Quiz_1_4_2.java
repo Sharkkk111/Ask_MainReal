@@ -10,7 +10,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Quiz_1_4_2 extends AppCompatActivity {
-
+    // declaring UI elements and shared preferences
     Button home;
     Button true1;
     Button false1;
@@ -19,13 +19,28 @@ public class Quiz_1_4_2 extends AppCompatActivity {
     Button c;
     Button d;
     SharedPreferences sp;
+    /*
+  Set content view to quiz1_4_2
+  compare users input for each question to correct answers
+       if equal move user to lesson complete page
+       if not equal return to lesson page
+  */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // Initialize SharedPreferences
         sp = getSharedPreferences("Preferences", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
+
+        //set content view
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz1_4_2);
+
+        // initialize button using id in xml code
         home = findViewById(R.id.home);
+        /*
+        set the onClickListener for the home button
+         Navigate to HomePage class
+         */
         home.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -35,7 +50,13 @@ public class Quiz_1_4_2 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // initialize button using id in xml code
         false1 = findViewById(R.id.false1);
+        /*
+        Set up the click listener for button false 1
+        option false 1 is not correct so it sends the user back to the lesson
+         */
         false1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -43,13 +64,22 @@ public class Quiz_1_4_2 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // initialize button using id in xml code
         true1 = findViewById(R.id.true1);
+         /*
+        Set up the click listener for button true 1
+        option true 1 is correct so it sends the user to the lesson complete page
+         */
         true1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //update preferences
                 editor.putBoolean("answer1", true);
                 editor.commit();
+                //check if all questions are answered correctly
                 if (sp.getBoolean("answer2", false)) {
+                    //update preferences
                     editor.putInt("creditScoreLesson", 2);
                     editor.commit();
                     Intent intent = new Intent(Quiz_1_4_2.this, LessonComplete.class);
@@ -57,7 +87,13 @@ public class Quiz_1_4_2 extends AppCompatActivity {
                 }
             }
         });
+
+        // initialize button using id in xml code
         a = findViewById(R.id.a);
+        /*
+        Set up the click listener for button a
+        option a is not correct so it sends the user back to the lesson
+         */
         a.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -65,7 +101,13 @@ public class Quiz_1_4_2 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // initialize button using id in xml code
         b = findViewById(R.id.b);
+        /*
+        Set up the click listener for button b
+        option b is not correct so it sends the user back to the lesson
+         */
         b.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -73,7 +115,13 @@ public class Quiz_1_4_2 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // initialize button using id in xml code
         c = findViewById(R.id.c);
+        /*
+        Set up the click listener for button c
+        option c is not correct so it sends the user back to the lesson
+         */
         c.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -81,13 +129,22 @@ public class Quiz_1_4_2 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // initialize button using id in xml code
         d = findViewById(R.id.d);
+        /*
+        Set up the click listener for button d
+        option d is correct so it sends the user to the lesson complete page
+         */
         d.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //update preferences
                 editor.putBoolean("answer2", true);
                 editor.commit();
+                //check if all questions are answered correctly
                 if (sp.getBoolean("answer1", false)) {
+                    //update preferences
                     editor.putInt("creditScoreLesson", 2);
                     editor.commit();
                     Intent intent = new Intent(Quiz_1_4_2.this, LessonComplete.class);
